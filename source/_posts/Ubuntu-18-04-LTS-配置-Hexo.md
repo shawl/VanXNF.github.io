@@ -4,7 +4,7 @@ date: 2018-09-01 15:17:54
 tags: ["Ubuntu 18.04 LTS","Hexo"]
 ---
 
-GitHub Pages + Hexo 搭建博客可参考 [GitHub Pages + Hexo 搭建博客](http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more)
+GitHub Pages + Hexo 搭建博客可查看 {% post_link Ubuntu-18.04-LTS-GitHub-Pages-Hexo-搭建博客 %}
 
 ---
 
