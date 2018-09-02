@@ -62,7 +62,7 @@ git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
 - 合并 `themes` 分支到主分支 source：
 
   ```
-  git checkout master source
+  git checkout source
   git merge themes --squash
   git commit
   ```
