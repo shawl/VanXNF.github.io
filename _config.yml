@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: VanXNF's Blog
-subtitle:
-description:
+title: Welcome To Vientiane
+subtitle: VanXNF's Blog
+description: Record The Moments Of Time
 keywords: blogs
 author: VanXNF
 language:
@@ -56,13 +56,16 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+    编程: programming
+    生活: life
+    其他: other
 tag_map:
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: YYYY-MM-DD HH:mm:ss
 time_format: HH:mm:ss
 
 # Pagination

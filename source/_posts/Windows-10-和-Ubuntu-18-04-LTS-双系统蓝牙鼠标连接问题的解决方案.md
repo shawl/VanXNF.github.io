@@ -2,6 +2,7 @@
 title: Windows 10 和 Ubuntu 18.04 LTS 双系统蓝牙鼠标连接问题的解决方案
 date: 2018-09-01 19:57:17
 tags: [蓝牙鼠标, Bluetooth Mouse, Windows 10, Ubuntu 18.04 LTS, 鼠标]
+categories: 编程
 ---
 &nbsp;&nbsp;笔记本安装了双系统，蓝牙鼠标连接一个系统之后重启到另一个系统就需要把鼠标删掉重新连接，十分麻烦。本文旨在为这个问题提供可行的解决方案。主要参考自 [CSDN](https://blog.csdn.net/10km/article/details/61201268)。
 

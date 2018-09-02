@@ -2,6 +2,7 @@
 title: Sublime Text 3 插件及注册码
 date: 2018-09-01 19:31:35
 tags: [Sublime Text 3, 注册码]
+categories: 编程
 ---
 ### Sublime Text 3 注册码及破解
 

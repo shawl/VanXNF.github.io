@@ -2,6 +2,7 @@
 title: Sublime Text 3 配置 python3 编译环境（Ubuntu 18.04 LTS）
 date: 2018-09-01 19:33:40
 tags: [Sublime Text 3, python, Ubuntu 18.04 LTS]
+categories: 编程
 ---
 
 ### 获取 python3 路径
