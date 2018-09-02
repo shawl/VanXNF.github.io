@@ -4,6 +4,9 @@ date: 2018-09-02 20:42:46
 tags: [Hexo, 主题]
 categories: 编程
 ---
+
+>写在前面，本篇解决方案针对的是以 {% post_link Ubuntu-18.04-LTS-GitHub-Pages-Hexo-搭建博客 %} 搭建出来的 Hexo 博客，但对一般搭建方法也有一定参考价值，具体请自行判断。
+
 ### 问题
 
 &nbsp;&nbsp;由于修改`hexo`主题的默认设置需要使用`git`管理来方便备份，所以如何同步主题的设置也是一件很重要的事。
@@ -13,7 +16,7 @@ categories: 编程
 &nbsp;&nbsp;[Hiker](https://github.com/iTimeTraveler/hexo-theme-hiker)的使用方法
 
 ```
-git clone git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
+git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
 ```
 
 &nbsp;&nbsp;这样配置完其实`thems/next/`就是一个包含`.git/`的子项目仓库。所以在`push`主项目的时候不会上传子项目，子项目的文件夹是灰的，并且里面是空的。所以从远程仓库拉取的项目中是没有 Hiker 主题的。
@@ -26,7 +29,7 @@ git clone git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes
 
 &nbsp;&nbsp;首先要 fork 一下 Hiker 这个项目，然后拉取到本地做修改，修改好后 push 到远程仓库。然后用`git subtree`把`themes/hiker/`当做子项目来统一管理。
 
-### 步骤
+### 创建 subtree 步骤
 
 - 首先进入 Hexo 博客所在的目录，本例子中是 `Hexo`。
 
@@ -67,6 +70,7 @@ git clone git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes
 ### 提交对主题配置文件的修改
 
 ```
+git checkout themes
 git subtree push --prefix=themes/hiker hiker master
 ```
 
@@ -76,9 +80,9 @@ git subtree push --prefix=themes/hiker hiker master
 
 ```
 git checkout themes
-git merge master
-git subtree pull --prefix=themes/next next master
-git checkout master
+git merge source
+git subtree pull --prefix=themes/hiker hiker master
+git checkout source
 git merge themes --squash
 git commit
 ```
