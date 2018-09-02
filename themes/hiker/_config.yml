@@ -106,7 +106,11 @@ wumii:
 # Available value:
 #    default | gray | normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
+<<<<<<< HEAD
 highlight_theme: night bright
+=======
+highlight_theme: gray
+>>>>>>> themes
 
 
 # Article theme color
