@@ -8,7 +8,7 @@ subtitle: VanXNF's Blog
 description: Record The Moments Of Time
 keywords: [blogs, VanXNF]
 author: VanXNF
-language: 
+language:
 timezone:
 
 # URL
@@ -56,9 +56,6 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
-    编程: programming
-    生活: life
-    其他: other
 tag_map:
 
 # Date / Time format
