@@ -3,7 +3,7 @@ title: Ubuntu 1804 蓝牙鼠标连接失败问题解决 Bluetooth Mouse Won't Co
 date: 2018-09-01 20:04:05
 updated: 2018-09-01 20:04:05
 tags: [蓝牙鼠标, Ubuntu 18.04 LTS, Bluetooth Mouse]
-categories: 编程
+categories: Programming
 ---
 &nbsp;&nbsp;方案主要参考自 [Ubuntu Forums](https://ubuntuforums.org/showthread.php?t=2390542)
 

@@ -3,7 +3,7 @@ title: ASUS S200E Ubuntu 18.04 开机启动键盘映射
 date: 2018-09-01 20:08:45
 updated: 2018-09-01 20:08:45
 tags: [ASUS, S200E, Ubuntu 18.04 LTS, 开机启动, 键盘映射]
-categories: 编程
+categories: Programming
 ---
 
 # 设置键盘映射

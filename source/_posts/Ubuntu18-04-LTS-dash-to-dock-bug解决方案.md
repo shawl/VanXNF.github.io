@@ -3,7 +3,7 @@ title: Ubuntu18.04 LTS dash to dock bug解决方案
 date: 2018-09-01 20:21:27
 updated: 2018-09-01 20:21:27
 tags: [Ubuntu 18.04 LTS, dash to dock]
-categories: 编程
+categories: Software
 ---
 &nbsp;&nbsp;截至到目前dash to dock GNOME 3.28**第63版**依旧存在**登陆界面出现dock栏**的问题。
 

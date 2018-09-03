@@ -3,7 +3,7 @@ title: Ubuntu 18.04 LTS GitHub Pages + Hexo 搭建博客
 date: 2018-09-01 18:04:05
 updated: 2018-09-01 18:04:05
 tags: [静态独立博客, Hexo, GitHub Page, Git, Ubuntu 18.04 LTS]
-categories: 编程
+categories: Programming
 ---
 
 

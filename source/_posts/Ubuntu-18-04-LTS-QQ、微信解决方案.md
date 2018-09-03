@@ -3,7 +3,7 @@ title: Ubuntu 18.04 LTS QQ、微信解决方案
 date: 2018-09-01 20:19:00
 updated: 2018-09-01 20:19:00
 tags: [QQ, 微信, Ubuntu 18.04 LTS]
-categories: 编程
+categories: Software
 ---
 #Deepin-wine 环境安装
 

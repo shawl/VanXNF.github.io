@@ -3,7 +3,7 @@ title: Hexo 博客 Hiker 主题增加文章最后编辑时间，并按照最后�
 date: 2018-09-03 16:12:07
 updated: 2018-09-03 18:46:02
 tags: [Hexo, Hiker, Updated, 更新时间]
-categories: 编程
+categories: Programming
 ---
 
 # 前言

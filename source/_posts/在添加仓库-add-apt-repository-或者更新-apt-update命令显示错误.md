@@ -3,7 +3,7 @@ title: 在添加仓库 add-apt-repository 或者更新 apt update命令显示错
 date: 2018-09-01 16:47:37
 updated: 2018-09-01 16:47:37
 tags: [apt update]
-categories: 编程
+categories: Programming
 ---
 
 &nbsp;&nbsp;类似以下错误：

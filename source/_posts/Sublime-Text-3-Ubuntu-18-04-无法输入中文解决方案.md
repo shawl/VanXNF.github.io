@@ -3,7 +3,7 @@ title: Sublime Text 3 Ubuntu 18.04 无法输入中文解决方案
 date: 2018-09-01 16:26:09
 updated: 2018-09-01 16:26:09
 tags: [Ubuntu 18.04 LTS, Sublime Text 3]
-categories: 编程
+categories: Software
 ---
 
 **&nbsp;&nbsp;本方案来自 GitHub 项目 [sublime-text-imfix](https://github.com/lyfeyaj/sublime-text-imfix) ， 感谢 [lyfeyaj](https://github.com/lyfeyaj) 的付出。**

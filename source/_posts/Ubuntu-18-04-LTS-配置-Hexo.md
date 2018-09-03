@@ -3,7 +3,7 @@ title: Ubuntu 18.04 LTS 配置 Hexo
 date: 2018-09-01 15:17:54
 updated: 2018-09-01 15:17:54
 tags: ["Ubuntu 18.04 LTS","Hexo"]
-categories: 编程
+categories: Programming
 ---
 
 GitHub Pages + Hexo 搭建博客可查看 {% post_link Ubuntu-18.04-LTS-GitHub-Pages-Hexo-搭建博客 %}

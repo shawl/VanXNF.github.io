@@ -3,7 +3,7 @@ title: Hexo 主题同步
 date: 2018-09-02 20:42:46
 updated: 2018-09-02 20:42:46
 tags: [Hexo, 主题]
-categories: 编程
+categories: Programming
 ---
 
 >写在前面，本篇解决方案针对的是以 {% post_link Ubuntu-18.04-LTS-GitHub-Pages-Hexo-搭建博客 %} 搭建出来的 Hexo 博客，但对一般搭建方法也有一定参考价值，具体请自行判断。
