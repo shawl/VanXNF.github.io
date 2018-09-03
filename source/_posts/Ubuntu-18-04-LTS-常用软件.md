@@ -70,3 +70,15 @@ sudo mkfontdir
 ```
 sudo fc-cache
 ```
+
+### 解压 unrar
+&nbsp;&nbsp;首先执行以下命令安装：
+```
+sudo apt-get install unrar
+```
+
+&nbsp;&nbsp;这个网上教程很多，但很遗憾，一开始那位写错了，后面的都抄错了。最常用命令是：
+```
+unrar x xxx.rar
+```
+&nbsp;&nbsp;这样可以保持压缩包文件目录结构解压出来。
