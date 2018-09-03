@@ -20,8 +20,8 @@ keywords: ""
 avatar:
   enable: true
   border: true
-  width: 100
-  height: 100
+  width: 80
+  height: 80
   top: 0
   url: css/images/mylogo.png
 
