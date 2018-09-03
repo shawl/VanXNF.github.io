@@ -1,7 +1,7 @@
 ---
 title: Hexo 主题同步
 date: 2018-09-02 20:42:46
-updated: 2018-09-02 20:42:46
+updated: 2018-09-03 19:07:32
 tags: [Hexo, 主题]
 categories: Programming
 ---
@@ -72,6 +72,7 @@ git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker
 
 ```
 git checkout themes
+git merge source
 git subtree push --prefix=themes/hiker hiker master
 ```
 
@@ -81,7 +82,6 @@ git subtree push --prefix=themes/hiker hiker master
 
 ```
 git checkout themes
-git merge source
 git subtree pull --prefix=themes/hiker hiker master
 git checkout source
 git merge themes --squash
