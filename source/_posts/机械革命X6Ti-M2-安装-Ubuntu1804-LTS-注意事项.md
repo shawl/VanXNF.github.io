@@ -1,6 +1,7 @@
 ---
 title: 机械革命 X6Ti-M2 安装 Ubuntu1804 LTS 注意事项
 date: 2018-09-01 20:11:23
+updated: 2018-09-01 20:11:23
 tags: [机械革命, Ubuntu 18.04 LTS, X6Ti-M2]
 categories: 编程
 ---

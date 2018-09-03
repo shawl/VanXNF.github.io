@@ -1,6 +1,7 @@
 ---
 title: Ubuntu 18.04 LTS Putty 字体设置
 date: 2018-09-02 23:47:43
+updated: 2018-09-02 23:47:43
 tags: [Ubuntu 18.04 LTS, Putty]
 categories: 编程
 ---

@@ -1,6 +1,7 @@
 ---
 title: Hexo 主题同步
 date: 2018-09-02 20:42:46
+updated: 2018-09-02 20:42:46
 tags: [Hexo, 主题]
 categories: 编程
 ---

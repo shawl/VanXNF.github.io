@@ -1,6 +1,7 @@
 ---
 title: Ubuntu 18.04 LTS 常用软件
 date: 2018-09-01 19:27:02
+updated: 2018-09-01 19:27:02
 tags: [Ubuntu 18.04 LTS]
 categories: 编程
 ---

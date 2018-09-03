@@ -1,6 +1,7 @@
 ---
 title: 在添加仓库 add-apt-repository 或者更新 apt update命令显示错误
 date: 2018-09-01 16:47:37
+updated: 2018-09-01 16:47:37
 tags: [apt update]
 categories: 编程
 ---

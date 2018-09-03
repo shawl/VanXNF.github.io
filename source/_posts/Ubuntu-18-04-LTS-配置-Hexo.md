@@ -1,6 +1,7 @@
 ---
 title: Ubuntu 18.04 LTS 配置 Hexo
 date: 2018-09-01 15:17:54
+updated: 2018-09-01 15:17:54
 tags: ["Ubuntu 18.04 LTS","Hexo"]
 categories: 编程
 ---
