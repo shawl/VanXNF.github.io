@@ -1,7 +1,7 @@
 ---
 title: Hexo 博客 Hiker 主题增加文章最后编辑时间，并按照最后编辑时间排序
 date: 2018-09-03 16:12:07
-updated: 2018-09-03 16:12:07
+updated: 2018-09-03 18:46:02
 tags: [Hexo, Hiker, Updated, 更新时间]
 categories: 编程
 ---
@@ -31,6 +31,8 @@ updated: {{ date }}
 ```
 
 &nbsp;&nbsp;这个时候你就可以生成一篇新的博客看看有没有效果了。你想加别的内容也是这样修改。之后修改了文章内容之后，把 updated 后面的时间改一下就 OK 了。
+
+&nbsp;&nbsp;使用 Atom 写博客的快速输入 update 时间戳，可以查看 {% post_link 在-Atom-中快速输入时间戳 %}
 
 ## 调整 Hexo 主配置文件
 &nbsp;&nbsp;然后找到主配置文件 `_config.yml`（**注意：不是主题的 _config.yml**），修改 index_generator 的 order_by 为 -updated 即可开启更新时间排序，你最后修改过的文章就会显示到最前面了:
