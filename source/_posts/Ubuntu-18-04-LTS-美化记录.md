@@ -1,7 +1,7 @@
 ---
 title: Ubuntu 18.04 LTS 美化记录
 date: 2018-09-01 19:35:22
-updated: 2018-09-01 19:35:22
+updated: 2018-09-08 15:13:05
 tags: [Ubuntu 18.04 LTS, 美化]
 categories: Programming
 ---
@@ -15,6 +15,12 @@ categories: Programming
 cd ~/Downloads/grub-theme-vimix
 sudo ./Install
 ```
+
+&nbsp;&nbsp;注意：安装主题后记得在 `/etc/default/grub` 中找到 `GRUB_GFXMODE`这一行，然后删去最前面的 `#` 将后面的分辨率改成自己的就可以了。结果如下：
+```
+GRUB_GFXMODE=1920x1080
+```
+
 # 主题美化
 
 &nbsp;&nbsp;Ubuntu采用了GNOME，因此要美化主题，首先需要安装 gnome-tweak-tool 。
