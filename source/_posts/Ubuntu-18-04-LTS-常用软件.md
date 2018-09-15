@@ -1,7 +1,7 @@
 ---
 title: Ubuntu 18.04 LTS 常用软件
 date: 2018-09-01 19:27:02
-updated: 2018-09-01 19:27:02
+updated: 2018-09-15 16:49:57
 tags: [Ubuntu 18.04 LTS]
 categories: Software
 ---
@@ -83,3 +83,9 @@ sudo apt-get install unrar
 unrar x xxx.rar
 ```
 &nbsp;&nbsp;这样可以保持压缩包文件目录结构解压出来。
+
+### PDF 阅读器 okular
+&nbsp;&nbsp;执行以下命令安装：
+```
+sudo apt-get install okular
+```
