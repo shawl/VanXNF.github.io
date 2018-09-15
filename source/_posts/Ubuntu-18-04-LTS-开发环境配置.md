@@ -1,7 +1,7 @@
 ---
 title: Ubuntu 18.04 LTS 开发环境配置
 date: 2018-09-01 20:23:24
-updated: 2018-09-01 20:23:24
+updated: 2018-09-15 19:11:35
 tags: [Ubuntu 18.04 LTS, 开发]
 categories: Programming
 ---
@@ -244,7 +244,7 @@ sudo chmod +x PyCharm.desktop
 ### 安装
 &nbsp;&nbsp;首先从 [https://www.jetbrains.com/idea/download/#section=linux](https://www.jetbrains.com/idea/download/#section=linux) 下载软件压缩包。
 
-&nbsp;&nbsp;将解压并将文件夹移动到 /opt/ 下
+&nbsp;&nbsp;将压缩包解压并将文件夹移动到 /opt/ 下
 ```
 tar -xf ideaIU-2018.2.2.tar.gz
 sudo mv idea-IU-182.4129.33 /opt
@@ -328,4 +328,54 @@ sudo apt-get install putty
 ```
 sudo dpkg -i atom-amd64.deb
 ```
+
+## Clion
+
+### 安装
+&nbsp;&nbsp;首先从官网下载 [https://www.jetbrains.com/clion/whatsnew/](https://www.jetbrains.com/clion/whatsnew/) 软件压缩包。
+
+&nbsp;&nbsp;将压缩包解压并移动到 /opt/ 下：
+```
+tar -xf CLion-2018.2.3.tar.gz
+sudo mv clion-2018.2.3 /opt/
+```
+&nbsp;&nbsp;进入文件夹下：
+```
+cd /opt/clion-2018.2.3/bin
+```
+&nbsp;&nbsp;执行以下命令即可打开 CLion， 但不建议这么做，建议先创建快捷方式。
+```
+sudo ./clion.sh
+```
+
+### 创建快捷方式
+
+&nbsp;&nbsp;Ubuntu 在 /usr/share/applications 目录下存放着系统应用程序的快捷启动图标，我们可以在这里创建 CLion 的快捷方式。首先进入文件夹:
+```
+cd /usr/share/applications
+```
+&nbsp;&nbsp;创建快捷方式:
+```
+sudo vim Clion.desktop
+```
+&nbsp;&nbsp;添加如下内容：
+```
+[Desktop Entry]
+Name=CLion
+Name[zh_CN]=Clion
+Comment=CLion
+Exec=/opt/clion-2018.2.3/bin/clion.sh
+Icon=/opt/clion-2018.2.3/bin/clion.png
+Terminal=false
+Type=Application
+Categories=Application;
+Encoding=UTF-8
+StartupNotify=true
+```
+&nbsp;&nbsp;然后保存退出，执行：
+```
+sudo chmod +x Clion.desktop
+```
+&nbsp;&nbsp;即可从菜单栏打开 CLion 了。
+
 # 未完待续
