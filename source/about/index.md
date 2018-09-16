@@ -5,4 +5,4 @@ layout: about
 comments: false
 ---
 
-&nbsp;&nbsp;又要开学了，果然还是很焦虑呀。
+&nbsp;&nbsp;开学了，作业有点多，果然还是很焦虑呀。
