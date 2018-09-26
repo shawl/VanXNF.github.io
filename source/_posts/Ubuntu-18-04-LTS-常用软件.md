@@ -1,7 +1,7 @@
 ---
 title: Ubuntu 18.04 LTS 常用软件
 date: 2018-09-01 19:27:02
-updated: 2018-09-26 21:24:11
+updated: 2018-09-26 21:29:19
 tags: [Ubuntu 18.04 LTS]
 categories: Software
 ---
@@ -19,7 +19,7 @@ sudo dpkg -i netease-cloud-music_1.1.0_amd64_ubuntu16.04.deb
 
 &nbsp;&nbsp;如果遇到无法保存配置的问题，以下是解决方案：
 
-1. 在 Home 目录下搜索 netease-cloud-music 可以发现在 home 下的 `.cache` 和 `.config` 下都存在这个文件夹，对于 `.cache` 下的文件夹直接删除，对于 `.config` 下的文件夹，需要改变所有者，执行以下命令：
+&nbsp;&nbsp;在 Home 目录下搜索 netease-cloud-music 可以发现在 home 下的 `.cache` 和 `.config` 下都存在这个文件夹，对于 `.cache` 下的文件夹直接删除，对于 `.config` 下的文件夹，需要改变所有者，执行以下命令：
 ```
 cd ~/.config
 sudo chown -R vanxnf netease-cloud-music
