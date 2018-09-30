@@ -5,4 +5,4 @@ layout: about
 comments: false
 ---
 
-&nbsp;&nbsp;开学了，作业有点多，果然还是很焦虑呀。
+&nbsp;&nbsp;时间过得真快，马上要国庆了，项目马上开始进入编码阶段了，有点小激动。
