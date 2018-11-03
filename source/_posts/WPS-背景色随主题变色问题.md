@@ -1,7 +1,7 @@
 ---
 title: WPS 背景色随主题变色问题
 date: 2018-11-03 17:05:03
-updated: 2018-11-03 17:05:03
+updated: 2018-11-03 17:45:14
 tags: [WPS, Ubuntu 18.04 LTS]
 categories: Programming
 ---
@@ -10,7 +10,7 @@ categories: Programming
 # 问题描述
 &nbsp;&nbsp;傻傻的 WPS 在我使用 GNOME 深色的主题后，就会出现如下图一样的问题：
 ![](https://s1.ax1x.com/2018/11/03/i4o2vT.png)
-&nsbp;&nbsp;实在是不能忍。同时，wps word 默认字体颜色会变为白色，背景色却仍旧是白色，搞得我好几次以为文档格式有问题，缺字少表的。安装了 LibreOffice 和 CrossOver 装的 Office 2016 就没有这个问题。虽说能用，但是还是不能忍。
+&nbsp;&nbsp;实在是不能忍。同时，wps word 默认字体颜色会变为白色，背景色却仍旧是白色，搞得我好几次以为文档格式有问题，缺字少表的。安装了 LibreOffice 和 CrossOver 装的 Office 2016 就没有这个问题。虽说能用，但是还是不能忍。
 
 # 解决方案
 &nbsp;&nbsp;那么接下来是解决方案。首先，修改主题不太现实，万一我下次换个主题岂不是又要修改一遍。那么，问题的突破口就需要在 WPS 这里找了。在网上查到一些资料，desktop 快捷方式启动时可以传入一些参数。那么就编辑一下 WPS 的快捷方式，在里面试着指定主题就好了。
