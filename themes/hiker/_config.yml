@@ -33,7 +33,7 @@ home_background_image:
   enable: true
   mode: image
   rolling: true
-  url: [css/images/home-bg1.jpg, css/images/home-bg2.jpg, css/images/home-bg3.jpg]
+  url: [https://s2.ax1x.com/2019/02/25/kIkP61.jpg, https://s2.ax1x.com/2019/02/25/kIkClR.jpg, https://s2.ax1x.com/2019/02/25/kIkiOx.jpg]
 
 home_logo_image:
   enable: false
@@ -42,7 +42,7 @@ home_logo_image:
 
 
 # AboutPage background
-about_big_image: [css/images/about-me1.jpg, css/images/about-me2.jpg, css/images/about-me3.jpg]
+about_big_image: [https://s2.ax1x.com/2019/02/25/kIkZkD.jpg, https://s2.ax1x.com/2019/02/25/kIkete.jpg]
 
 
 # Archive pagination
@@ -79,7 +79,7 @@ social:
   #Weibo: http://www.yoursite.com
   Twitter: https://twitter.com/VanXNF
   Facebook: https://www.facebook.com/profile.php?id=100027325237816
-  Google-plus: https://plus.google.com/116208197090731009375
+  #Google-plus: https://plus.google.com/116208197090731009375
   Instagram: https://www.instagram.com/vernonstorm/
   #Pinterest:
   #Flickr:
