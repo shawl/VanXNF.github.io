@@ -147,6 +147,7 @@ gitalk:
   repo: VanXNF.github.io
   owner: VanXNF
   admin: VanXNF
+  # id: window.location.pathname.split('/').pop().substring(0, 49)
 
 
 # gitment comment service
