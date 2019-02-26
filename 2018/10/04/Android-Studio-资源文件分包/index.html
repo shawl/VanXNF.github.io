@@ -211,32 +211,6 @@ ga('send', 'pageview');
 
 
    
-  <div class="text-center donation">
-    <div class="inner-donation">
-      <span class="btn-donation">支持一下</span>
-      <div class="donation-body">
-        <div class="tip text-center">扫一扫，请我喝一杯咖啡</div>
-        <ul>
-        
-          <li class="item">
-            
-              <span>微信扫一扫</span>
-            
-            <img src="https://s2.ax1x.com/2019/02/26/kIwm4O.png" alt>
-          </li>
-        
-          <li class="item">
-            
-              <span>支付宝扫一扫</span>
-            
-            <img src="https://s2.ax1x.com/2019/02/26/kIwuCD.jpg" alt>
-          </li>
-        
-        </ul>
-      </div>
-    </div>
-  </div>
-
 
    
   <div class="box-prev-next clearfix">
@@ -338,8 +312,8 @@ const gitalk = new Gitalk({
   owner: 'VanXNF',
   // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
   // 50个字符串则会报错.
-  // id: location.pathname.split('/').pop().substring(0, 49),
-  id: location.pathname,
+  id: location.pathname.split('/').pop().substring(0, 49),
+  // id: location.pathname,
   admin: ['VanXNF'],
   // facebook-like distraction free mode
   distractionFreeMode: false
