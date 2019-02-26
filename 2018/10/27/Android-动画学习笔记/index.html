@@ -15,18 +15,18 @@
     <meta name="keywords" content="Android,Animator,动画,">
   
 
-  <meta name="description" content="Android 最初提供的动画效果实现方式为逐帧动画和补间动画，然而它们均存在不同程度的缺陷。自从 Android 3.0 开始，系统提供了一种全新的动画效果———属性动画。本文也将基于属性动画的学习进行一些记录。  &amp;nbsp;&amp;nbsp;学习内容主要来自郭霖的博客，在这里先做一个记录：  Android属性动画完全解析(上)，初识属性动画的基本用法 Android属性动画完全解析(中)，Va">
+  <meta name="description" content="Android 最初提供的动画效果实现方式为逐帧动画和补间动画，然而它们均存在不同程度的缺陷。自从 Android 3.0 开始，系统提供了一种全新的动画效果———属性动画。本文也将基于属性动画的学习进行一些记录。    学习内容主要来自郭霖的博客，在这里先做一个记录：  Android属性动画完全解析(上)，初识属性动画的基本用法 Android属性动画完全解析(中)，ValueAnimato">
 <meta name="keywords" content="Android,Animator,动画">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android 动画学习笔记">
 <meta property="og:url" content="https://vanxnf.top/2018/10/27/Android-动画学习笔记/index.html">
 <meta property="og:site_name" content="Welcome To Vientiane">
-<meta property="og:description" content="Android 最初提供的动画效果实现方式为逐帧动画和补间动画，然而它们均存在不同程度的缺陷。自从 Android 3.0 开始，系统提供了一种全新的动画效果———属性动画。本文也将基于属性动画的学习进行一些记录。  &amp;nbsp;&amp;nbsp;学习内容主要来自郭霖的博客，在这里先做一个记录：  Android属性动画完全解析(上)，初识属性动画的基本用法 Android属性动画完全解析(中)，Va">
+<meta property="og:description" content="Android 最初提供的动画效果实现方式为逐帧动画和补间动画，然而它们均存在不同程度的缺陷。自从 Android 3.0 开始，系统提供了一种全新的动画效果———属性动画。本文也将基于属性动画的学习进行一些记录。    学习内容主要来自郭霖的博客，在这里先做一个记录：  Android属性动画完全解析(上)，初识属性动画的基本用法 Android属性动画完全解析(中)，ValueAnimato">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-10-27T02:16:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android 动画学习笔记">
-<meta name="twitter:description" content="Android 最初提供的动画效果实现方式为逐帧动画和补间动画，然而它们均存在不同程度的缺陷。自从 Android 3.0 开始，系统提供了一种全新的动画效果———属性动画。本文也将基于属性动画的学习进行一些记录。  &amp;nbsp;&amp;nbsp;学习内容主要来自郭霖的博客，在这里先做一个记录：  Android属性动画完全解析(上)，初识属性动画的基本用法 Android属性动画完全解析(中)，Va">
+<meta name="twitter:description" content="Android 最初提供的动画效果实现方式为逐帧动画和补间动画，然而它们均存在不同程度的缺陷。自从 Android 3.0 开始，系统提供了一种全新的动画效果———属性动画。本文也将基于属性动画的学习进行一些记录。    学习内容主要来自郭霖的博客，在这里先做一个记录：  Android属性动画完全解析(上)，初识属性动画的基本用法 Android属性动画完全解析(中)，ValueAnimato">
 
   
 
@@ -151,7 +151,7 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ValueAnimator"><span class="toc-text">ValueAnimator</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#valueanimator"><span class="toc-text"> ValueAnimator</span></a></li></ol>
   </div>
 
 
@@ -200,13 +200,14 @@ ga('send', 'pageview');
       <blockquote>
 <p>Android 最初提供的动画效果实现方式为逐帧动画和补间动画，然而它们均存在不同程度的缺陷。自从 Android 3.0 开始，系统提供了一种全新的动画效果———属性动画。本文也将基于属性动画的学习进行一些记录。</p>
 </blockquote>
-<p>&nbsp;&nbsp;学习内容主要来自郭霖的博客，在这里先做一个记录：</p>
+<p>  学习内容主要来自郭霖的博客，在这里先做一个记录：</p>
 <ol>
 <li><a href="https://blog.csdn.net/guolin_blog/article/details/43536355" target="_blank" rel="noopener">Android属性动画完全解析(上)，初识属性动画的基本用法</a></li>
 <li><a href="https://blog.csdn.net/guolin_blog/article/details/43816093" target="_blank" rel="noopener">Android属性动画完全解析(中)，ValueAnimator和ObjectAnimator的高级用法</a></li>
 <li><a href="https://blog.csdn.net/guolin_blog/article/details/44171115" target="_blank" rel="noopener">Android属性动画完全解析(下)，Interpolator和ViewPropertyAnimator的用法</a></li>
 </ol>
-<h1 id="ValueAnimator"><a href="#ValueAnimator" class="headerlink" title="ValueAnimator"></a>ValueAnimator</h1><p>未完待续。</p>
+<h1 id="valueanimator"><a class="markdownIt-Anchor" href="#valueanimator"></a> ValueAnimator</h1>
+<p>未完待续。</p>
 
     
   </div>
@@ -215,6 +216,32 @@ ga('send', 'pageview');
 
 
    
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，请我喝一杯咖啡</div>
+        <ul>
+        
+          <li class="item">
+            
+              <span>微信扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwm4O.png" alt>
+          </li>
+        
+          <li class="item">
+            
+              <span>支付宝扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwuCD.jpg" alt>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
 
    
   <div class="box-prev-next clearfix">
@@ -302,6 +329,7 @@ ga('send', 'pageview');
     
 
     
+<!-- <script src="../../../source/js/md5.min.js"></script> -->
 
 <!-- Gitalk评论插件通用代码 -->
 <div id="gitalk-container"></div>
@@ -316,7 +344,8 @@ const gitalk = new Gitalk({
   owner: 'VanXNF',
   // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
   // 50个字符串则会报错.
-  id: location.href,
+  // id: location.pathname.split('/').pop().substring(0, 49),
+  id: 'test',
   // id: location.pathname,
   admin: ['VanXNF'],
   // facebook-like distraction free mode

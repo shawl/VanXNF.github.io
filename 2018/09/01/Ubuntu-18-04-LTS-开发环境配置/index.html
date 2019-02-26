@@ -15,18 +15,18 @@
     <meta name="keywords" content="Ubuntu 18.04 LTS,开发,">
   
 
-  <meta name="description" content="JDK 配置方法一 手动下载安装下载并安装&amp;nbsp;&amp;nbsp;首先下载 JDK8 ，解压到  /usr/lib/jvm ，我下载的是 jdk-8u181-linux-x64.tar.gz，执行12sudo mkdir /usr/lib/jvmsudo tar -zxvf jdk-8u181-linux-x64.tar.gz -C /usr/lib/jvm 配置环境变量&amp;nbsp;&amp;nbsp;由">
+  <meta name="description" content="JDK 配置  方法一 手动下载安装  下载并安装   首先下载 JDK8 ，解压到  /usr/lib/jvm ，我下载的是 jdk-8u181-linux-x64.tar.gz，执行 12sudo mkdir /usr/lib/jvmsudo tar -zxvf jdk-8u181-linux-x64.tar.gz -C /usr/lib/jvm  配置环境变量   由于我使用 zsh 因此">
 <meta name="keywords" content="Ubuntu 18.04 LTS,开发">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu 18.04 LTS 开发环境配置">
 <meta property="og:url" content="https://vanxnf.top/2018/09/01/Ubuntu-18-04-LTS-开发环境配置/index.html">
 <meta property="og:site_name" content="Welcome To Vientiane">
-<meta property="og:description" content="JDK 配置方法一 手动下载安装下载并安装&amp;nbsp;&amp;nbsp;首先下载 JDK8 ，解压到  /usr/lib/jvm ，我下载的是 jdk-8u181-linux-x64.tar.gz，执行12sudo mkdir /usr/lib/jvmsudo tar -zxvf jdk-8u181-linux-x64.tar.gz -C /usr/lib/jvm 配置环境变量&amp;nbsp;&amp;nbsp;由">
+<meta property="og:description" content="JDK 配置  方法一 手动下载安装  下载并安装   首先下载 JDK8 ，解压到  /usr/lib/jvm ，我下载的是 jdk-8u181-linux-x64.tar.gz，执行 12sudo mkdir /usr/lib/jvmsudo tar -zxvf jdk-8u181-linux-x64.tar.gz -C /usr/lib/jvm  配置环境变量   由于我使用 zsh 因此">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-09-15T11:11:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu 18.04 LTS 开发环境配置">
-<meta name="twitter:description" content="JDK 配置方法一 手动下载安装下载并安装&amp;nbsp;&amp;nbsp;首先下载 JDK8 ，解压到  /usr/lib/jvm ，我下载的是 jdk-8u181-linux-x64.tar.gz，执行12sudo mkdir /usr/lib/jvmsudo tar -zxvf jdk-8u181-linux-x64.tar.gz -C /usr/lib/jvm 配置环境变量&amp;nbsp;&amp;nbsp;由">
+<meta name="twitter:description" content="JDK 配置  方法一 手动下载安装  下载并安装   首先下载 JDK8 ，解压到  /usr/lib/jvm ，我下载的是 jdk-8u181-linux-x64.tar.gz，执行 12sudo mkdir /usr/lib/jvmsudo tar -zxvf jdk-8u181-linux-x64.tar.gz -C /usr/lib/jvm  配置环境变量   由于我使用 zsh 因此">
 
   
 
@@ -151,7 +151,7 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JDK-配置"><span class="toc-text">JDK 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#方法一-手动下载安装"><span class="toc-text">方法一 手动下载安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载并安装"><span class="toc-text">下载并安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置环境变量"><span class="toc-text">配置环境变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#系统设置默认-JDK"><span class="toc-text">系统设置默认 JDK</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#查看java版本"><span class="toc-text">查看java版本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法二-命令行方式安装-oracle-JDK"><span class="toc-text">方法二 命令行方式安装 oracle JDK</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装依赖包"><span class="toc-text">安装依赖包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#添加仓库源"><span class="toc-text">添加仓库源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更新软件包列表"><span class="toc-text">更新软件包列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装java-JDK"><span class="toc-text">安装java JDK</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-查看java版本"><span class="toc-text">5. 查看java版本</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#应用软件安装"><span class="toc-text">应用软件安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Sublime-Text-3"><span class="toc-text">Sublime Text 3</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-text">安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android-Studio"><span class="toc-text">Android Studio</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-1"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建快捷方式"><span class="toc-text">创建快捷方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置-adb-环境变量（可选）"><span class="toc-text">配置 adb 环境变量（可选）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PyCharm"><span class="toc-text">PyCharm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-2"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建快捷方式-1"><span class="toc-text">创建快捷方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IntelliJ-IDEA"><span class="toc-text">IntelliJ IDEA</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-3"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建快捷方式-2"><span class="toc-text">创建快捷方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Anaconda"><span class="toc-text">Anaconda</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-4"><span class="toc-text">安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Putty"><span class="toc-text">Putty</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Atom"><span class="toc-text">Atom</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Clion"><span class="toc-text">Clion</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-5"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建快捷方式-3"><span class="toc-text">创建快捷方式</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#未完待续"><span class="toc-text">未完待续</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#jdk-配置"><span class="toc-text"> JDK 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#方法一-手动下载安装"><span class="toc-text"> 方法一 手动下载安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载并安装"><span class="toc-text"> 下载并安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置环境变量"><span class="toc-text"> 配置环境变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#系统设置默认-jdk"><span class="toc-text"> 系统设置默认 JDK</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法二-命令行方式安装-oracle-jdk"><span class="toc-text"> 方法二 命令行方式安装 oracle JDK</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装依赖包"><span class="toc-text"> 安装依赖包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#添加仓库源"><span class="toc-text"> 添加仓库源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更新软件包列表"><span class="toc-text"> 更新软件包列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装java-jdk"><span class="toc-text"> 安装java JDK</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#应用软件安装"><span class="toc-text"> 应用软件安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#sublime-text-3"><span class="toc-text"> Sublime Text 3</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-text"> 安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#android-studio"><span class="toc-text"> Android Studio</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-2"><span class="toc-text"> 安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建快捷方式"><span class="toc-text"> 创建快捷方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置-adb-环境变量可选"><span class="toc-text"> 配置 adb 环境变量（可选）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pycharm"><span class="toc-text"> PyCharm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-3"><span class="toc-text"> 安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建快捷方式-2"><span class="toc-text"> 创建快捷方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#intellij-idea"><span class="toc-text"> IntelliJ IDEA</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-4"><span class="toc-text"> 安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建快捷方式-3"><span class="toc-text"> 创建快捷方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#anaconda"><span class="toc-text"> Anaconda</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-5"><span class="toc-text"> 安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#putty"><span class="toc-text"> Putty</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#atom"><span class="toc-text"> Atom</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#clion"><span class="toc-text"> Clion</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-6"><span class="toc-text"> 安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建快捷方式-4"><span class="toc-text"> 创建快捷方式</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#未完待续"><span class="toc-text"> 未完待续</span></a></li></ol>
   </div>
 
 
@@ -197,82 +197,173 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <h1 id="JDK-配置"><a href="#JDK-配置" class="headerlink" title="JDK 配置"></a>JDK 配置</h1><h2 id="方法一-手动下载安装"><a href="#方法一-手动下载安装" class="headerlink" title="方法一 手动下载安装"></a>方法一 手动下载安装</h2><h3 id="下载并安装"><a href="#下载并安装" class="headerlink" title="下载并安装"></a>下载并安装</h3><p>&nbsp;&nbsp;首先下载 <a href="http://www.oracle.com/technetwork/cn/java/javase/downloads/jdk8-downloads-2133151-zhs.html" target="_blank" rel="noopener">JDK8</a> ，解压到  /usr/lib/jvm ，我下载的是 <strong>jdk-8u181-linux-x64.tar.gz</strong>，执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /usr/lib/jvm</span><br><span class="line">sudo tar -zxvf jdk-8u181-linux-x64.tar.gz -C /usr/lib/jvm</span><br></pre></td></tr></table></figure></p>
-<h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>&nbsp;&nbsp;由于我使用 zsh 因此编辑的是 <strong>~/.zshrc</strong> 文件，使用默认终端的则编辑 <strong>~/.bashrc</strong> 文件，或者<strong>配置所有用户的环境变量</strong>编辑 <strong>/etc/profile</strong> 。</p>
-<p>&nbsp;&nbsp;执行：</p>
+      <h1 id="jdk-配置"><a class="markdownIt-Anchor" href="#jdk-配置"></a> JDK 配置</h1>
+<h2 id="方法一-手动下载安装"><a class="markdownIt-Anchor" href="#方法一-手动下载安装"></a> 方法一 手动下载安装</h2>
+<h3 id="下载并安装"><a class="markdownIt-Anchor" href="#下载并安装"></a> 下载并安装</h3>
+<p>  首先下载 <a href="http://www.oracle.com/technetwork/cn/java/javase/downloads/jdk8-downloads-2133151-zhs.html" target="_blank" rel="noopener">JDK8</a> ，解压到  /usr/lib/jvm ，我下载的是 <strong>jdk-8u181-linux-x64.tar.gz</strong>，执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /usr/lib/jvm</span><br><span class="line">sudo tar -zxvf jdk-8u181-linux-x64.tar.gz -C /usr/lib/jvm</span><br></pre></td></tr></table></figure>
+<h3 id="配置环境变量"><a class="markdownIt-Anchor" href="#配置环境变量"></a> 配置环境变量</h3>
+<p>  由于我使用 zsh 因此编辑的是 <strong>~/.zshrc</strong> 文件，使用默认终端的则编辑 <strong>~/.bashrc</strong> 文件，或者<strong>配置所有用户的环境变量</strong>编辑 <strong>/etc/profile</strong> 。</p>
+<p>  执行：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi ~/.zshrc</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;在文件末尾添加：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#set oracle jdk environment</span><br><span class="line">export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_181</span><br><span class="line">export JRE_HOME=$&#123;JAVA_HOME&#125;/jre**</span><br><span class="line">export CLASSPATH=.:$&#123;JAVA_HOME&#125;/lib:$&#123;JRE_HOME&#125;/lib</span><br><span class="line">export PATH=$&#123;JAVA_HOME&#125;/bin:$PATH</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;然后执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure></p>
-<h3 id="系统设置默认-JDK"><a href="#系统设置默认-JDK" class="headerlink" title="系统设置默认 JDK"></a>系统设置默认 JDK</h3><p>&nbsp;&nbsp;执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.8.0_181/bin/java 300</span><br><span class="line">sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.8.0_181/bin/javac 300</span><br><span class="line">sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk1.8.0_181/bin/jar 300</span><br><span class="line">sudo update-alternatives --install /usr/bin/javah javah /usr/lib/jvm/jdk1.8.0_181/bin/javah 300</span><br><span class="line">sudo update-alternatives --install /usr/bin/javap javap /usr/lib/jvm/jdk1.8.0_181/bin/javap 300</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;然后执行:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo update-alternatives --config java</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;若是初次安装 JDK，会有下面的提示:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/jdk1.8.0_181/bin/java</span><br><span class="line">Nothing to configure.</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;否则，选择合适的 JDK即可。</p>
-<h3 id="查看java版本"><a href="#查看java版本" class="headerlink" title="查看java版本"></a>查看java版本</h3><p>&nbsp;&nbsp;查看版本检验是否安装成功：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure></p>
-<h2 id="方法二-命令行方式安装-oracle-JDK"><a href="#方法二-命令行方式安装-oracle-JDK" class="headerlink" title="方法二 命令行方式安装 oracle JDK"></a>方法二 命令行方式安装 oracle JDK</h2><h3 id="安装依赖包"><a href="#安装依赖包" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python-software-properties</span><br></pre></td></tr></table></figure>
-<h3 id="添加仓库源"><a href="#添加仓库源" class="headerlink" title="添加仓库源"></a>添加仓库源</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:webupd8team/java</span><br></pre></td></tr></table></figure>
-<h3 id="更新软件包列表"><a href="#更新软件包列表" class="headerlink" title="更新软件包列表"></a>更新软件包列表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure>
-<h3 id="安装java-JDK"><a href="#安装java-JDK" class="headerlink" title="安装java JDK"></a>安装java JDK</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install oracle-java8-installer</span><br></pre></td></tr></table></figure>
-<p>&nbsp;&nbsp;<strong>注意安装过程中需要接受协议</strong></p>
-<h3 id="5-查看java版本"><a href="#5-查看java版本" class="headerlink" title="5. 查看java版本"></a>5. 查看java版本</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure>
-<h1 id="应用软件安装"><a href="#应用软件安装" class="headerlink" title="应用软件安装"></a>应用软件安装</h1><h2 id="Sublime-Text-3"><a href="#Sublime-Text-3" class="headerlink" title="Sublime Text 3"></a>Sublime Text 3</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>&nbsp;&nbsp;参考 Sublime Text 3 的<a href="https://www.sublimetext.com/docs/3/linux_repositories.html" target="_blank" rel="noopener">官方安装文档</a>，按照提示即可正常安装，此处摘录 apt 安装步骤：</p>
-<p>&nbsp;&nbsp;Install the GPG key:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;Ensure apt is set up to work with https sources:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install apt-transport-https</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;以下按需要二选一即可</p>
-<p>&nbsp;&nbsp;Select the channel to use:</p>
-<p><strong>Stable</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;deb https://download.sublimetext.com/ apt/stable/&quot; | sudo tee /etc/apt/sources.list.d/sublime-text.list</span><br></pre></td></tr></table></figure></p>
-<p><strong>Dev</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;deb https://download.sublimetext.com/ apt/dev/&quot; | sudo tee /etc/apt/sources.list.d/sublime-text.list</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;Update apt sources and install Sublime Text<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install sublime-text</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;注册码及插件请查看 <a href="https://www.jianshu.com/p/08d07b012d38" target="_blank" rel="noopener">Sublime Text 3 插件及注册码</a>。<br>&nbsp;&nbsp;无法输入中文问题请查看 <a href="https://www.jianshu.com/p/592a294962c8" target="_blank" rel="noopener">Sublime Text 3 Ubuntu 18.04 无法输入中文解决方案</a>。</p>
-<h2 id="Android-Studio"><a href="#Android-Studio" class="headerlink" title="Android Studio"></a>Android Studio</h2><h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>&nbsp;&nbsp;首先从 <a href="https://developer.android.com/studio/" target="_blank" rel="noopener">https://developer.android.com/studio/</a> 下载软件压缩包。<br>&nbsp;&nbsp;右键解压或者使用以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo unzip android-studio-ide-173.4907809-linux.zip</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;解压后文件夹名为 android-studio，将文件夹移动至 /opt/下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mv android-studio /opt/</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;进入文件夹下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/android-studio/bin/</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;执行以下命令即可打开 Android Studio，但是不建议这么做，因为这样打开配置文件等均存于root目录下，<strong>建议先创建快捷方式</strong>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./studio.sh</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;初次启动，将设置选择好，会下载所需的文件，需要较长时间。</p>
-<h3 id="创建快捷方式"><a href="#创建快捷方式" class="headerlink" title="创建快捷方式"></a>创建快捷方式</h3><p>&nbsp;&nbsp;Ubuntu 在 /usr/share/applications 目录下存放着系统应用程序的快捷启动图标，我们可以在这里创建 Android Studio 的快捷方式。<br>&nbsp;&nbsp;首先进入文件夹<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/share/applications</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;创建快捷方式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim android-studio.desktop</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;添加如下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Name=Android Studio</span><br><span class="line">Name[zh_CN]=Android Studio</span><br><span class="line">Comment=Android Studio</span><br><span class="line">Exec=/opt/android-studio/bin/studio.sh</span><br><span class="line">Icon=/opt/android-studio/bin/studio.png</span><br><span class="line">Terminal=false</span><br><span class="line">Type=Application</span><br><span class="line">Categories=Application;</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">StartupNotify=true</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;然后保存退出，执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +x android-studio.desktop</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;即可从菜单栏打开 Android Studio 了。</p>
-<h3 id="配置-adb-环境变量（可选）"><a href="#配置-adb-环境变量（可选）" class="headerlink" title="配置 adb 环境变量（可选）"></a>配置 adb 环境变量（可选）</h3><p>&nbsp;&nbsp;编辑 <strong>~/.zshrc</strong> 文件（系统自带终端编辑 ~/.bashrc ，对所有用户生效编辑 /etc/profile）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim ~/.zshrc</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;在下方加入以下内容（ /home/vanxnf/Android/Sdk 部分写你的 sdk 路径）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#set path for android sdk tools</span><br><span class="line">export PATH=$PATH:/home/vanxnf/Android/Sdk/tools/</span><br><span class="line">export PATH=$PATH:/home/vanxnf/Android/Sdk/platform-tools/</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;然后执行以下命令即可生效。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure></p>
-<h2 id="PyCharm"><a href="#PyCharm" class="headerlink" title="PyCharm"></a>PyCharm</h2><h3 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h3><p>&nbsp;&nbsp;首先从 <a href="https://www.jetbrains.com/pycharm/download/#section=linux" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/#section=linux</a> 下载软件压缩包。也可直接使用以下命令安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo snap install [pycharm-professional|pycharm-community] --classic</span><br></pre></td></tr></table></figure></p>
-<p>这里采用下载压缩包的形式，解压并将文件夹移动到 /opt/ 下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -xf pycharm-professional-2018.2.2.tar.gz</span><br><span class="line">sudo mv pycharm-2018.2.2 /opt/</span><br></pre></td></tr></table></figure></p>
-<p>进入文件夹下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/pycharm-2018.2.2/bin</span><br></pre></td></tr></table></figure></p>
-<p>执行以下命令即可打开 PyCharm， 但不建议这么做，建议先创建快捷方式。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./pycharm.sh</span><br></pre></td></tr></table></figure></p>
-<h3 id="创建快捷方式-1"><a href="#创建快捷方式-1" class="headerlink" title="创建快捷方式"></a>创建快捷方式</h3><p>&nbsp;&nbsp;Ubuntu 在 /usr/share/applications 目录下存放着系统应用程序的快捷启动图标，我们可以在这里创建 PyCharm 的快捷方式。<br>&nbsp;&nbsp;首先进入文件夹<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/share/applications</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;创建快捷方式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim PyCharm.desktop</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;添加如下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Name=PyCharm</span><br><span class="line">Name[zh_CN]=PyCharm</span><br><span class="line">Comment=PyCharm</span><br><span class="line">Exec=/opt/pycharm-2018.2.2/bin/pycharm.sh</span><br><span class="line">Icon=/opt/pycharm-2018.2.2/bin/pycharm.png</span><br><span class="line">Terminal=false</span><br><span class="line">Type=Application</span><br><span class="line">Categories=Application;</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">StartupNotify=true</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;然后保存退出，执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +x PyCharm.desktop</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;即可从菜单栏打开 PyCharm 了。</p>
-<h2 id="IntelliJ-IDEA"><a href="#IntelliJ-IDEA" class="headerlink" title="IntelliJ IDEA"></a>IntelliJ IDEA</h2><h3 id="安装-3"><a href="#安装-3" class="headerlink" title="安装"></a>安装</h3><p>&nbsp;&nbsp;首先从 <a href="https://www.jetbrains.com/idea/download/#section=linux" target="_blank" rel="noopener">https://www.jetbrains.com/idea/download/#section=linux</a> 下载软件压缩包。</p>
-<p>&nbsp;&nbsp;将压缩包解压并将文件夹移动到 /opt/ 下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -xf ideaIU-2018.2.2.tar.gz</span><br><span class="line">sudo mv idea-IU-182.4129.33 /opt</span><br></pre></td></tr></table></figure></p>
-<p>进入文件夹下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/idea-IU-182.4129.33/bin</span><br></pre></td></tr></table></figure></p>
-<p>执行以下命令即可打开 IDEA， 但不建议这么做，建议先创建快捷方式。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./idea.sh</span><br></pre></td></tr></table></figure></p>
-<h3 id="创建快捷方式-2"><a href="#创建快捷方式-2" class="headerlink" title="创建快捷方式"></a>创建快捷方式</h3><p>&nbsp;&nbsp;Ubuntu 在 /usr/share/applications 目录下存放着系统应用程序的快捷启动图标，我们可以在这里创建 IDEA 的快捷方式。<br>&nbsp;&nbsp;首先进入文件夹<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/share/applications</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;创建快捷方式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim IDEA.desktop</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;添加如下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Name=IDEA</span><br><span class="line">Name[zh_CN]=IDEA</span><br><span class="line">Comment=IDEA</span><br><span class="line">Exec=/opt/idea-IU-182.4129.33/bin/idea.sh</span><br><span class="line">Icon=/opt/idea-IU-182.4129.33/bin/idea.png</span><br><span class="line">Terminal=false</span><br><span class="line">Type=Application</span><br><span class="line">Categories=Application;</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">StartupNotify=true</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;然后保存退出，执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +x IDEA.desktop</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;即可从菜单栏打开 IDEA 了。</p>
-<h2 id="Anaconda"><a href="#Anaconda" class="headerlink" title="Anaconda"></a>Anaconda</h2><h3 id="安装-4"><a href="#安装-4" class="headerlink" title="安装"></a>安装</h3><p>&nbsp;&nbsp;首先从 <a href="https://www.anaconda.com/download/#linux" target="_blank" rel="noopener">https://www.anaconda.com/download/#linux</a> 下载 Anaconda。<br>&nbsp;&nbsp;执行以下命令安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash Anaconda3-5.2.0-Linux-x86_64.sh</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;因为 Anaconda 的脚本只会添加到 ~/.bashrc 下，而使用 zsh 的需要在 ~/.zshrc 下添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># added by Anaconda3 installer</span><br><span class="line">export PATH=&quot;/home/vanxnf/anaconda3/bin:$PATH&quot;</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;然后执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;显示类似以下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Python 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)</span><br><span class="line">[GCC 7.2.0] on linux</span><br><span class="line">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;即安装成功。</p>
-<h2 id="Putty"><a href="#Putty" class="headerlink" title="Putty"></a>Putty</h2><p>&nbsp;&nbsp;使用以下命令安装即可：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install putty</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;说一下 Ubuntu GNOME 环境下 putty 的复制粘贴，其实 GNOME 自带这个功能，<strong>只需要鼠标选中高亮要复制的内容，在需要粘贴的地方按鼠标中键即可</strong>。</p>
-<h2 id="Atom"><a href="#Atom" class="headerlink" title="Atom"></a>Atom</h2><p>&nbsp;&nbsp;从官网下载 <a href="https://atom.io/" target="_blank" rel="noopener">https://atom.io/</a> ，然后使用以下命令安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i atom-amd64.deb</span><br></pre></td></tr></table></figure></p>
-<h2 id="Clion"><a href="#Clion" class="headerlink" title="Clion"></a>Clion</h2><h3 id="安装-5"><a href="#安装-5" class="headerlink" title="安装"></a>安装</h3><p>&nbsp;&nbsp;首先从官网下载 <a href="https://www.jetbrains.com/clion/whatsnew/" target="_blank" rel="noopener">https://www.jetbrains.com/clion/whatsnew/</a> 软件压缩包。</p>
-<p>&nbsp;&nbsp;将压缩包解压并移动到 /opt/ 下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -xf CLion-2018.2.3.tar.gz</span><br><span class="line">sudo mv clion-2018.2.3 /opt/</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;进入文件夹下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/clion-2018.2.3/bin</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;执行以下命令即可打开 CLion， 但不建议这么做，建议先创建快捷方式。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./clion.sh</span><br></pre></td></tr></table></figure></p>
-<h3 id="创建快捷方式-3"><a href="#创建快捷方式-3" class="headerlink" title="创建快捷方式"></a>创建快捷方式</h3><p>&nbsp;&nbsp;Ubuntu 在 /usr/share/applications 目录下存放着系统应用程序的快捷启动图标，我们可以在这里创建 CLion 的快捷方式。首先进入文件夹:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/share/applications</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;创建快捷方式:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim Clion.desktop</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;添加如下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Name=CLion</span><br><span class="line">Name[zh_CN]=Clion</span><br><span class="line">Comment=CLion</span><br><span class="line">Exec=/opt/clion-2018.2.3/bin/clion.sh</span><br><span class="line">Icon=/opt/clion-2018.2.3/bin/clion.png</span><br><span class="line">Terminal=false</span><br><span class="line">Type=Application</span><br><span class="line">Categories=Application;</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">StartupNotify=true</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;然后保存退出，执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +x Clion.desktop</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;即可从菜单栏打开 CLion 了。</p>
-<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1>
+<p>  在文件末尾添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#set oracle jdk environment</span><br><span class="line">export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_181</span><br><span class="line">export JRE_HOME=$&#123;JAVA_HOME&#125;/jre**</span><br><span class="line">export CLASSPATH=.:$&#123;JAVA_HOME&#125;/lib:$&#123;JRE_HOME&#125;/lib</span><br><span class="line">export PATH=$&#123;JAVA_HOME&#125;/bin:$PATH</span><br></pre></td></tr></table></figure>
+<p>  然后执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
+<h3 id="系统设置默认-jdk"><a class="markdownIt-Anchor" href="#系统设置默认-jdk"></a> 系统设置默认 JDK</h3>
+<p>  执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.8.0_181/bin/java 300</span><br><span class="line">sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.8.0_181/bin/javac 300</span><br><span class="line">sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk1.8.0_181/bin/jar 300</span><br><span class="line">sudo update-alternatives --install /usr/bin/javah javah /usr/lib/jvm/jdk1.8.0_181/bin/javah 300</span><br><span class="line">sudo update-alternatives --install /usr/bin/javap javap /usr/lib/jvm/jdk1.8.0_181/bin/javap 300</span><br></pre></td></tr></table></figure>
+<p>  然后执行:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo update-alternatives --config java</span><br></pre></td></tr></table></figure>
+<p>  若是初次安装 JDK，会有下面的提示:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/jdk1.8.0_181/bin/java</span><br><span class="line">Nothing to configure.</span><br></pre></td></tr></table></figure>
+<p>  否则，选择合适的 JDK即可。</p>
+<p>### 查看java版本</p>
+<p>  查看版本检验是否安装成功：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure>
+<h2 id="方法二-命令行方式安装-oracle-jdk"><a class="markdownIt-Anchor" href="#方法二-命令行方式安装-oracle-jdk"></a> 方法二 命令行方式安装 oracle JDK</h2>
+<h3 id="安装依赖包"><a class="markdownIt-Anchor" href="#安装依赖包"></a> 安装依赖包</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python-software-properties</span><br></pre></td></tr></table></figure>
+<h3 id="添加仓库源"><a class="markdownIt-Anchor" href="#添加仓库源"></a> 添加仓库源</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:webupd8team/java</span><br></pre></td></tr></table></figure>
+<h3 id="更新软件包列表"><a class="markdownIt-Anchor" href="#更新软件包列表"></a> 更新软件包列表</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure>
+<h3 id="安装java-jdk"><a class="markdownIt-Anchor" href="#安装java-jdk"></a> 安装java JDK</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install oracle-java8-installer</span><br></pre></td></tr></table></figure>
+<p>  <strong>注意安装过程中需要接受协议</strong></p>
+<p>###5. 查看java版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure>
+<h1 id="应用软件安装"><a class="markdownIt-Anchor" href="#应用软件安装"></a> 应用软件安装</h1>
+<h2 id="sublime-text-3"><a class="markdownIt-Anchor" href="#sublime-text-3"></a> Sublime Text 3</h2>
+<h3 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> 安装</h3>
+<p>  参考 Sublime Text 3 的<a href="https://www.sublimetext.com/docs/3/linux_repositories.html" target="_blank" rel="noopener">官方安装文档</a>，按照提示即可正常安装，此处摘录 apt 安装步骤：</p>
+<p>  Install the GPG key:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -</span><br></pre></td></tr></table></figure>
+<p>  Ensure apt is set up to work with https sources:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install apt-transport-https</span><br></pre></td></tr></table></figure>
+<p>  以下按需要二选一即可</p>
+<p>  Select the channel to use:</p>
+<p><strong>Stable</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;deb https://download.sublimetext.com/ apt/stable/&quot; | sudo tee /etc/apt/sources.list.d/sublime-text.list</span><br></pre></td></tr></table></figure>
+<p><strong>Dev</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;deb https://download.sublimetext.com/ apt/dev/&quot; | sudo tee /etc/apt/sources.list.d/sublime-text.list</span><br></pre></td></tr></table></figure>
+<p>  Update apt sources and install Sublime Text</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install sublime-text</span><br></pre></td></tr></table></figure>
+<p>  注册码及插件请查看 <a href="https://www.jianshu.com/p/08d07b012d38" target="_blank" rel="noopener">Sublime Text 3 插件及注册码</a>。<br>
+  无法输入中文问题请查看 <a href="https://www.jianshu.com/p/592a294962c8" target="_blank" rel="noopener">Sublime Text 3 Ubuntu 18.04 无法输入中文解决方案</a>。</p>
+<h2 id="android-studio"><a class="markdownIt-Anchor" href="#android-studio"></a> Android Studio</h2>
+<h3 id="安装-2"><a class="markdownIt-Anchor" href="#安装-2"></a> 安装</h3>
+<p>  首先从 <a href="https://developer.android.com/studio/" target="_blank" rel="noopener">https://developer.android.com/studio/</a> 下载软件压缩包。<br>
+  右键解压或者使用以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo unzip android-studio-ide-173.4907809-linux.zip</span><br></pre></td></tr></table></figure>
+<p>  解压后文件夹名为 android-studio，将文件夹移动至 /opt/下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mv android-studio /opt/</span><br></pre></td></tr></table></figure>
+<p>  进入文件夹下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/android-studio/bin/</span><br></pre></td></tr></table></figure>
+<p>  执行以下命令即可打开 Android Studio，但是不建议这么做，因为这样打开配置文件等均存于root目录下，<strong>建议先创建快捷方式</strong>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./studio.sh</span><br></pre></td></tr></table></figure>
+<p>  初次启动，将设置选择好，会下载所需的文件，需要较长时间。</p>
+<h3 id="创建快捷方式"><a class="markdownIt-Anchor" href="#创建快捷方式"></a> 创建快捷方式</h3>
+<p>  Ubuntu 在 /usr/share/applications 目录下存放着系统应用程序的快捷启动图标，我们可以在这里创建 Android Studio 的快捷方式。<br>
+  首先进入文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/share/applications</span><br></pre></td></tr></table></figure>
+<p>  创建快捷方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim android-studio.desktop</span><br></pre></td></tr></table></figure>
+<p>  添加如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Name=Android Studio</span><br><span class="line">Name[zh_CN]=Android Studio</span><br><span class="line">Comment=Android Studio</span><br><span class="line">Exec=/opt/android-studio/bin/studio.sh</span><br><span class="line">Icon=/opt/android-studio/bin/studio.png</span><br><span class="line">Terminal=false</span><br><span class="line">Type=Application</span><br><span class="line">Categories=Application;</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">StartupNotify=true</span><br></pre></td></tr></table></figure>
+<p>  然后保存退出，执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +x android-studio.desktop</span><br></pre></td></tr></table></figure>
+<p>  即可从菜单栏打开 Android Studio 了。</p>
+<h3 id="配置-adb-环境变量可选"><a class="markdownIt-Anchor" href="#配置-adb-环境变量可选"></a> 配置 adb 环境变量（可选）</h3>
+<p>  编辑 <strong>~/.zshrc</strong> 文件（系统自带终端编辑 ~/.bashrc ，对所有用户生效编辑 /etc/profile）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim ~/.zshrc</span><br></pre></td></tr></table></figure>
+<p>  在下方加入以下内容（ /home/vanxnf/Android/Sdk 部分写你的 sdk 路径）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#set path for android sdk tools</span><br><span class="line">export PATH=$PATH:/home/vanxnf/Android/Sdk/tools/</span><br><span class="line">export PATH=$PATH:/home/vanxnf/Android/Sdk/platform-tools/</span><br></pre></td></tr></table></figure>
+<p>  然后执行以下命令即可生效。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
+<h2 id="pycharm"><a class="markdownIt-Anchor" href="#pycharm"></a> PyCharm</h2>
+<h3 id="安装-3"><a class="markdownIt-Anchor" href="#安装-3"></a> 安装</h3>
+<p>  首先从 <a href="https://www.jetbrains.com/pycharm/download/#section=linux" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/#section=linux</a> 下载软件压缩包。也可直接使用以下命令安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo snap install [pycharm-professional|pycharm-community] --classic</span><br></pre></td></tr></table></figure>
+<p>这里采用下载压缩包的形式，解压并将文件夹移动到 /opt/ 下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -xf pycharm-professional-2018.2.2.tar.gz</span><br><span class="line">sudo mv pycharm-2018.2.2 /opt/</span><br></pre></td></tr></table></figure>
+<p>进入文件夹下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/pycharm-2018.2.2/bin</span><br></pre></td></tr></table></figure>
+<p>执行以下命令即可打开 PyCharm， 但不建议这么做，建议先创建快捷方式。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./pycharm.sh</span><br></pre></td></tr></table></figure>
+<h3 id="创建快捷方式-2"><a class="markdownIt-Anchor" href="#创建快捷方式-2"></a> 创建快捷方式</h3>
+<p>  Ubuntu 在 /usr/share/applications 目录下存放着系统应用程序的快捷启动图标，我们可以在这里创建 PyCharm 的快捷方式。<br>
+  首先进入文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/share/applications</span><br></pre></td></tr></table></figure>
+<p>  创建快捷方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim PyCharm.desktop</span><br></pre></td></tr></table></figure>
+<p>  添加如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Name=PyCharm</span><br><span class="line">Name[zh_CN]=PyCharm</span><br><span class="line">Comment=PyCharm</span><br><span class="line">Exec=/opt/pycharm-2018.2.2/bin/pycharm.sh</span><br><span class="line">Icon=/opt/pycharm-2018.2.2/bin/pycharm.png</span><br><span class="line">Terminal=false</span><br><span class="line">Type=Application</span><br><span class="line">Categories=Application;</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">StartupNotify=true</span><br></pre></td></tr></table></figure>
+<p>  然后保存退出，执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +x PyCharm.desktop</span><br></pre></td></tr></table></figure>
+<p>  即可从菜单栏打开 PyCharm 了。</p>
+<h2 id="intellij-idea"><a class="markdownIt-Anchor" href="#intellij-idea"></a> IntelliJ IDEA</h2>
+<h3 id="安装-4"><a class="markdownIt-Anchor" href="#安装-4"></a> 安装</h3>
+<p>  首先从 <a href="https://www.jetbrains.com/idea/download/#section=linux" target="_blank" rel="noopener">https://www.jetbrains.com/idea/download/#section=linux</a> 下载软件压缩包。</p>
+<p>  将压缩包解压并将文件夹移动到 /opt/ 下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -xf ideaIU-2018.2.2.tar.gz</span><br><span class="line">sudo mv idea-IU-182.4129.33 /opt</span><br></pre></td></tr></table></figure>
+<p>进入文件夹下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/idea-IU-182.4129.33/bin</span><br></pre></td></tr></table></figure>
+<p>执行以下命令即可打开 IDEA， 但不建议这么做，建议先创建快捷方式。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./idea.sh</span><br></pre></td></tr></table></figure>
+<h3 id="创建快捷方式-3"><a class="markdownIt-Anchor" href="#创建快捷方式-3"></a> 创建快捷方式</h3>
+<p>  Ubuntu 在 /usr/share/applications 目录下存放着系统应用程序的快捷启动图标，我们可以在这里创建 IDEA 的快捷方式。<br>
+  首先进入文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/share/applications</span><br></pre></td></tr></table></figure>
+<p>  创建快捷方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim IDEA.desktop</span><br></pre></td></tr></table></figure>
+<p>  添加如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Name=IDEA</span><br><span class="line">Name[zh_CN]=IDEA</span><br><span class="line">Comment=IDEA</span><br><span class="line">Exec=/opt/idea-IU-182.4129.33/bin/idea.sh</span><br><span class="line">Icon=/opt/idea-IU-182.4129.33/bin/idea.png</span><br><span class="line">Terminal=false</span><br><span class="line">Type=Application</span><br><span class="line">Categories=Application;</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">StartupNotify=true</span><br></pre></td></tr></table></figure>
+<p>  然后保存退出，执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +x IDEA.desktop</span><br></pre></td></tr></table></figure>
+<p>  即可从菜单栏打开 IDEA 了。</p>
+<h2 id="anaconda"><a class="markdownIt-Anchor" href="#anaconda"></a> Anaconda</h2>
+<h3 id="安装-5"><a class="markdownIt-Anchor" href="#安装-5"></a> 安装</h3>
+<p>  首先从 <a href="https://www.anaconda.com/download/#linux" target="_blank" rel="noopener">https://www.anaconda.com/download/#linux</a> 下载 Anaconda。<br>
+  执行以下命令安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash Anaconda3-5.2.0-Linux-x86_64.sh</span><br></pre></td></tr></table></figure>
+<p>  因为 Anaconda 的脚本只会添加到 ~/.bashrc 下，而使用 zsh 的需要在 ~/.zshrc 下添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># added by Anaconda3 installer</span><br><span class="line">export PATH=&quot;/home/vanxnf/anaconda3/bin:$PATH&quot;</span><br></pre></td></tr></table></figure>
+<p>  然后执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
+<p>  输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python</span><br></pre></td></tr></table></figure>
+<p>  显示类似以下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Python 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)</span><br><span class="line">[GCC 7.2.0] on linux</span><br><span class="line">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+<p>  即安装成功。</p>
+<h2 id="putty"><a class="markdownIt-Anchor" href="#putty"></a> Putty</h2>
+<p>  使用以下命令安装即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install putty</span><br></pre></td></tr></table></figure>
+<p>  说一下 Ubuntu GNOME 环境下 putty 的复制粘贴，其实 GNOME 自带这个功能，<strong>只需要鼠标选中高亮要复制的内容，在需要粘贴的地方按鼠标中键即可</strong>。</p>
+<h2 id="atom"><a class="markdownIt-Anchor" href="#atom"></a> Atom</h2>
+<p>  从官网下载 <a href="https://atom.io/" target="_blank" rel="noopener">https://atom.io/</a> ，然后使用以下命令安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i atom-amd64.deb</span><br></pre></td></tr></table></figure>
+<h2 id="clion"><a class="markdownIt-Anchor" href="#clion"></a> Clion</h2>
+<h3 id="安装-6"><a class="markdownIt-Anchor" href="#安装-6"></a> 安装</h3>
+<p>  首先从官网下载 <a href="https://www.jetbrains.com/clion/whatsnew/" target="_blank" rel="noopener">https://www.jetbrains.com/clion/whatsnew/</a> 软件压缩包。</p>
+<p>  将压缩包解压并移动到 /opt/ 下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -xf CLion-2018.2.3.tar.gz</span><br><span class="line">sudo mv clion-2018.2.3 /opt/</span><br></pre></td></tr></table></figure>
+<p>  进入文件夹下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/clion-2018.2.3/bin</span><br></pre></td></tr></table></figure>
+<p>  执行以下命令即可打开 CLion， 但不建议这么做，建议先创建快捷方式。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./clion.sh</span><br></pre></td></tr></table></figure>
+<h3 id="创建快捷方式-4"><a class="markdownIt-Anchor" href="#创建快捷方式-4"></a> 创建快捷方式</h3>
+<p>  Ubuntu 在 /usr/share/applications 目录下存放着系统应用程序的快捷启动图标，我们可以在这里创建 CLion 的快捷方式。首先进入文件夹:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/share/applications</span><br></pre></td></tr></table></figure>
+<p>  创建快捷方式:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim Clion.desktop</span><br></pre></td></tr></table></figure>
+<p>  添加如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Name=CLion</span><br><span class="line">Name[zh_CN]=Clion</span><br><span class="line">Comment=CLion</span><br><span class="line">Exec=/opt/clion-2018.2.3/bin/clion.sh</span><br><span class="line">Icon=/opt/clion-2018.2.3/bin/clion.png</span><br><span class="line">Terminal=false</span><br><span class="line">Type=Application</span><br><span class="line">Categories=Application;</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">StartupNotify=true</span><br></pre></td></tr></table></figure>
+<p>  然后保存退出，执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +x Clion.desktop</span><br></pre></td></tr></table></figure>
+<p>  即可从菜单栏打开 CLion 了。</p>
+<h1 id="未完待续"><a class="markdownIt-Anchor" href="#未完待续"></a> 未完待续</h1>
+
     
   </div>
 
@@ -280,6 +371,32 @@ ga('send', 'pageview');
 
 
    
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，请我喝一杯咖啡</div>
+        <ul>
+        
+          <li class="item">
+            
+              <span>微信扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwm4O.png" alt>
+          </li>
+        
+          <li class="item">
+            
+              <span>支付宝扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwuCD.jpg" alt>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
 
    
   <div class="box-prev-next clearfix">
@@ -367,6 +484,7 @@ ga('send', 'pageview');
     
 
     
+<!-- <script src="../../../source/js/md5.min.js"></script> -->
 
 <!-- Gitalk评论插件通用代码 -->
 <div id="gitalk-container"></div>
@@ -381,7 +499,8 @@ const gitalk = new Gitalk({
   owner: 'VanXNF',
   // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
   // 50个字符串则会报错.
-  id: location.href,
+  // id: location.pathname.split('/').pop().substring(0, 49),
+  id: 'test',
   // id: location.pathname,
   admin: ['VanXNF'],
   // facebook-like distraction free mode

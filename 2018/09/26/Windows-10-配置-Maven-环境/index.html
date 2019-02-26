@@ -15,18 +15,18 @@
     <meta name="keywords" content="Windows 10,Maven,">
   
 
-  <meta name="description" content="下载 Maven&amp;nbsp;&amp;nbsp;首先从 http://maven.apache.org/download.cgi 下载 Maven 压缩包， apache-maven-3.5.4-bin.zip 或者 apache-maven-3.5.4-bin.tar.gz 均可。下载完成后解压即可，我解压后文件夹路径为 D:\Maven\apache-maven-3.5.4。Maven 文件夹是我自行">
+  <meta name="description" content="下载 Maven   首先从 http://maven.apache.org/download.cgi 下载 Maven 压缩包， apache-maven-3.5.4-bin.zip 或者 apache-maven-3.5.4-bin.tar.gz 均可。下载完成后解压即可，我解压后文件夹路径为 D:\Maven\apache-maven-3.5.4。Maven 文件夹是我自行创建的，可随意更">
 <meta name="keywords" content="Windows 10,Maven">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows 10 配置 Maven 环境">
 <meta property="og:url" content="https://vanxnf.top/2018/09/26/Windows-10-配置-Maven-环境/index.html">
 <meta property="og:site_name" content="Welcome To Vientiane">
-<meta property="og:description" content="下载 Maven&amp;nbsp;&amp;nbsp;首先从 http://maven.apache.org/download.cgi 下载 Maven 压缩包， apache-maven-3.5.4-bin.zip 或者 apache-maven-3.5.4-bin.tar.gz 均可。下载完成后解压即可，我解压后文件夹路径为 D:\Maven\apache-maven-3.5.4。Maven 文件夹是我自行">
+<meta property="og:description" content="下载 Maven   首先从 http://maven.apache.org/download.cgi 下载 Maven 压缩包， apache-maven-3.5.4-bin.zip 或者 apache-maven-3.5.4-bin.tar.gz 均可。下载完成后解压即可，我解压后文件夹路径为 D:\Maven\apache-maven-3.5.4。Maven 文件夹是我自行创建的，可随意更">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-09-26T02:10:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows 10 配置 Maven 环境">
-<meta name="twitter:description" content="下载 Maven&amp;nbsp;&amp;nbsp;首先从 http://maven.apache.org/download.cgi 下载 Maven 压缩包， apache-maven-3.5.4-bin.zip 或者 apache-maven-3.5.4-bin.tar.gz 均可。下载完成后解压即可，我解压后文件夹路径为 D:\Maven\apache-maven-3.5.4。Maven 文件夹是我自行">
+<meta name="twitter:description" content="下载 Maven   首先从 http://maven.apache.org/download.cgi 下载 Maven 压缩包， apache-maven-3.5.4-bin.zip 或者 apache-maven-3.5.4-bin.tar.gz 均可。下载完成后解压即可，我解压后文件夹路径为 D:\Maven\apache-maven-3.5.4。Maven 文件夹是我自行创建的，可随意更">
 
   
 
@@ -151,7 +151,7 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#下载-Maven"><span class="toc-text">下载 Maven</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#创建本地仓库"><span class="toc-text">创建本地仓库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#配置环境变量"><span class="toc-text">配置环境变量</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#测试"><span class="toc-text">测试</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#下载-maven"><span class="toc-text"> 下载 Maven</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#创建本地仓库"><span class="toc-text"> 创建本地仓库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#配置环境变量"><span class="toc-text"> 配置环境变量</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#测试"><span class="toc-text"> 测试</span></a></li></ol>
   </div>
 
 
@@ -197,12 +197,20 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <h1 id="下载-Maven"><a href="#下载-Maven" class="headerlink" title="下载 Maven"></a>下载 Maven</h1><p>&nbsp;&nbsp;首先从 <a href="http://maven.apache.org/download.cgi" target="_blank" rel="noopener">http://maven.apache.org/download.cgi</a> 下载 Maven 压缩包， <code>apache-maven-3.5.4-bin.zip</code> 或者 <code>apache-maven-3.5.4-bin.tar.gz</code> 均可。下载完成后解压即可，我解压后文件夹路径为 <code>D:\Maven\apache-maven-3.5.4</code>。Maven 文件夹是我自行创建的，可随意更换。</p>
-<h1 id="创建本地仓库"><a href="#创建本地仓库" class="headerlink" title="创建本地仓库"></a>创建本地仓库</h1><p>&nbsp;&nbsp;在 <code>D:\Maven\</code> 下另外创建一个文件夹 <code>LocalRepository</code> 用作本地仓库，名字可自取。<br>进入 <code>D:\Maven\apache-maven-3.5.4\conf</code> 文件夹下，编辑 <code>settings.xml</code> 文件，找到下面的内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- localRepository</span><br><span class="line">   | The path to the local repository maven will use to store artifacts.</span><br><span class="line">   |</span><br><span class="line">   | Default: $&#123;user.home&#125;/.m2/repository</span><br><span class="line">  &lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</span><br><span class="line">  --&gt;</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;在下方添加一条本地仓库记录，路径写成自己创建的本地仓库文件夹路径，修改完成后如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- localRepository</span><br><span class="line">   | The path to the local repository maven will use to store artifacts.</span><br><span class="line">   |</span><br><span class="line">   | Default: $&#123;user.home&#125;/.m2/repository</span><br><span class="line">  &lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</span><br><span class="line">  --&gt;</span><br><span class="line">	&lt;localRepository&gt;D:\Maven\LocalRepository&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure></p>
-<h1 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h1><p>&nbsp;&nbsp;系统变量下新建一个变量，名称为 <strong>Maven</strong>，变量值为 Maven 解压路径，即上面的 <code>D:\Maven\apache-maven-3.5.4</code>, 然后在 path 变量下添加一条值 <code>%Maven%\bin</code>，保存退出即可。</p>
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>&nbsp;&nbsp;到此基本配置完毕了，输入以下命令测试是否成功：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn --version</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;返回版本号即为成功。</p>
+      <h1 id="下载-maven"><a class="markdownIt-Anchor" href="#下载-maven"></a> 下载 Maven</h1>
+<p>  首先从 <a href="http://maven.apache.org/download.cgi" target="_blank" rel="noopener">http://maven.apache.org/download.cgi</a> 下载 Maven 压缩包， <code>apache-maven-3.5.4-bin.zip</code> 或者 <code>apache-maven-3.5.4-bin.tar.gz</code> 均可。下载完成后解压即可，我解压后文件夹路径为 <code>D:\Maven\apache-maven-3.5.4</code>。Maven 文件夹是我自行创建的，可随意更换。</p>
+<h1 id="创建本地仓库"><a class="markdownIt-Anchor" href="#创建本地仓库"></a> 创建本地仓库</h1>
+<p>  在 <code>D:\Maven\</code> 下另外创建一个文件夹 <code>LocalRepository</code> 用作本地仓库，名字可自取。<br>
+进入 <code>D:\Maven\apache-maven-3.5.4\conf</code> 文件夹下，编辑 <code>settings.xml</code> 文件，找到下面的内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- localRepository</span><br><span class="line">   | The path to the local repository maven will use to store artifacts.</span><br><span class="line">   |</span><br><span class="line">   | Default: $&#123;user.home&#125;/.m2/repository</span><br><span class="line">  &lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</span><br><span class="line">  --&gt;</span><br></pre></td></tr></table></figure>
+<p>  在下方添加一条本地仓库记录，路径写成自己创建的本地仓库文件夹路径，修改完成后如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- localRepository</span><br><span class="line">   | The path to the local repository maven will use to store artifacts.</span><br><span class="line">   |</span><br><span class="line">   | Default: $&#123;user.home&#125;/.m2/repository</span><br><span class="line">  &lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</span><br><span class="line">  --&gt;</span><br><span class="line">	&lt;localRepository&gt;D:\Maven\LocalRepository&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="配置环境变量"><a class="markdownIt-Anchor" href="#配置环境变量"></a> 配置环境变量</h1>
+<p>  系统变量下新建一个变量，名称为 <strong>Maven</strong>，变量值为 Maven 解压路径，即上面的 <code>D:\Maven\apache-maven-3.5.4</code>, 然后在 path 变量下添加一条值 <code>%Maven%\bin</code>，保存退出即可。</p>
+<h1 id="测试"><a class="markdownIt-Anchor" href="#测试"></a> 测试</h1>
+<p>  到此基本配置完毕了，输入以下命令测试是否成功：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn --version</span><br></pre></td></tr></table></figure>
+<p>  返回版本号即为成功。</p>
 
     
   </div>
@@ -211,6 +219,32 @@ ga('send', 'pageview');
 
 
    
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，请我喝一杯咖啡</div>
+        <ul>
+        
+          <li class="item">
+            
+              <span>微信扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwm4O.png" alt>
+          </li>
+        
+          <li class="item">
+            
+              <span>支付宝扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwuCD.jpg" alt>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
 
    
   <div class="box-prev-next clearfix">
@@ -298,6 +332,7 @@ ga('send', 'pageview');
     
 
     
+<!-- <script src="../../../source/js/md5.min.js"></script> -->
 
 <!-- Gitalk评论插件通用代码 -->
 <div id="gitalk-container"></div>
@@ -312,7 +347,8 @@ const gitalk = new Gitalk({
   owner: 'VanXNF',
   // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
   // 50个字符串则会报错.
-  id: location.href,
+  // id: location.pathname.split('/').pop().substring(0, 49),
+  id: 'test',
   // id: location.pathname,
   admin: ['VanXNF'],
   // facebook-like distraction free mode

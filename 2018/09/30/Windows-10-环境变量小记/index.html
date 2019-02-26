@@ -15,18 +15,18 @@
     <meta name="keywords" content="Windows 10,环境变量,">
   
 
-  <meta name="description" content="新买了一个固态硬盘，打算重装一下系统，在此记录一下环境变量的配置情况，以便恢复环境作为参考。  系统变量JAVA 变量名： JAVA_HOME 变量值： C:\Program Files\Java\jdk1.8.0_172  &amp;nbsp;&amp;nbsp;然后在 path 中添加以下内容：  %JAVA_HOME%\bin  &amp;nbsp;&amp;nbsp;再新建一个系统变量：  变量名：CLASSPATH">
+  <meta name="description" content="新买了一个固态硬盘，打算重装一下系统，在此记录一下环境变量的配置情况，以便恢复环境作为参考。   系统变量  JAVA  变量名： JAVA_HOME 变量值： C:\Program Files\Java\jdk1.8.0_172    然后在 path 中添加以下内容：  %JAVA_HOME%\bin    再新建一个系统变量：  变量名：CLASSPATH 变量值：.;%JAVA_HOME">
 <meta name="keywords" content="Windows 10,环境变量">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows 10 环境变量小记">
 <meta property="og:url" content="https://vanxnf.top/2018/09/30/Windows-10-环境变量小记/index.html">
 <meta property="og:site_name" content="Welcome To Vientiane">
-<meta property="og:description" content="新买了一个固态硬盘，打算重装一下系统，在此记录一下环境变量的配置情况，以便恢复环境作为参考。  系统变量JAVA 变量名： JAVA_HOME 变量值： C:\Program Files\Java\jdk1.8.0_172  &amp;nbsp;&amp;nbsp;然后在 path 中添加以下内容：  %JAVA_HOME%\bin  &amp;nbsp;&amp;nbsp;再新建一个系统变量：  变量名：CLASSPATH">
+<meta property="og:description" content="新买了一个固态硬盘，打算重装一下系统，在此记录一下环境变量的配置情况，以便恢复环境作为参考。   系统变量  JAVA  变量名： JAVA_HOME 变量值： C:\Program Files\Java\jdk1.8.0_172    然后在 path 中添加以下内容：  %JAVA_HOME%\bin    再新建一个系统变量：  变量名：CLASSPATH 变量值：.;%JAVA_HOME">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-09-29T23:44:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows 10 环境变量小记">
-<meta name="twitter:description" content="新买了一个固态硬盘，打算重装一下系统，在此记录一下环境变量的配置情况，以便恢复环境作为参考。  系统变量JAVA 变量名： JAVA_HOME 变量值： C:\Program Files\Java\jdk1.8.0_172  &amp;nbsp;&amp;nbsp;然后在 path 中添加以下内容：  %JAVA_HOME%\bin  &amp;nbsp;&amp;nbsp;再新建一个系统变量：  变量名：CLASSPATH">
+<meta name="twitter:description" content="新买了一个固态硬盘，打算重装一下系统，在此记录一下环境变量的配置情况，以便恢复环境作为参考。   系统变量  JAVA  变量名： JAVA_HOME 变量值： C:\Program Files\Java\jdk1.8.0_172    然后在 path 中添加以下内容：  %JAVA_HOME%\bin    再新建一个系统变量：  变量名：CLASSPATH 变量值：.;%JAVA_HOME">
 
   
 
@@ -151,7 +151,7 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#系统变量"><span class="toc-text">系统变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JAVA"><span class="toc-text">JAVA</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ADB"><span class="toc-text">ADB</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MAVEN"><span class="toc-text">MAVEN</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#用户变量"><span class="toc-text">用户变量</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#OneDrive"><span class="toc-text">OneDrive</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#系统变量"><span class="toc-text"> 系统变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#java"><span class="toc-text"> JAVA</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#adb"><span class="toc-text"> ADB</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#maven"><span class="toc-text"> MAVEN</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#用户变量"><span class="toc-text"> 用户变量</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#onedrive"><span class="toc-text"> OneDrive</span></a></li></ol>
   </div>
 
 
@@ -200,32 +200,38 @@ ga('send', 'pageview');
       <blockquote>
 <p>新买了一个固态硬盘，打算重装一下系统，在此记录一下环境变量的配置情况，以便恢复环境作为参考。</p>
 </blockquote>
-<h1 id="系统变量"><a href="#系统变量" class="headerlink" title="系统变量"></a>系统变量</h1><h2 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h2><ul>
+<h1 id="系统变量"><a class="markdownIt-Anchor" href="#系统变量"></a> 系统变量</h1>
+<h2 id="java"><a class="markdownIt-Anchor" href="#java"></a> JAVA</h2>
+<ul>
 <li>变量名： <code>JAVA_HOME</code></li>
 <li>变量值： <code>C:\Program Files\Java\jdk1.8.0_172</code></li>
 </ul>
-<p>&nbsp;&nbsp;然后在 path 中添加以下内容：</p>
+<p>  然后在 path 中添加以下内容：</p>
 <ul>
 <li><code>%JAVA_HOME%\bin</code></li>
 </ul>
-<p>&nbsp;&nbsp;再新建一个系统变量：</p>
+<p>  再新建一个系统变量：</p>
 <ul>
 <li>变量名：<code>CLASSPATH</code></li>
 <li>变量值：<code>.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar</code></li>
 </ul>
-<h2 id="ADB"><a href="#ADB" class="headerlink" title="ADB"></a>ADB</h2><p>&nbsp;&nbsp;ADB 需要链接到 Android Sdk 安装的目录下，我是在安装 Android Studio 时默认安装，则变量如下：</p>
+<h2 id="adb"><a class="markdownIt-Anchor" href="#adb"></a> ADB</h2>
+<p>  ADB 需要链接到 Android Sdk 安装的目录下，我是在安装 Android Studio 时默认安装，则变量如下：</p>
 <ul>
 <li>变量名 <code>ADB_HOME</code></li>
 <li>变量值 <code>C:\Users\VanXN\AppData\Local\Android\Sdk\platform-tools;C:\Users\VanXN\AppData\Local\Android\Sdk\tools</code></li>
 </ul>
-<p>&nbsp;&nbsp;再在 path 中添加 一条 <code>%ADB_HOME%</code> 值即可。</p>
-<h2 id="MAVEN"><a href="#MAVEN" class="headerlink" title="MAVEN"></a>MAVEN</h2><p>&nbsp;&nbsp;Maven 没什么好说的，直接添加即可：</p>
+<p>  再在 path 中添加 一条 <code>%ADB_HOME%</code> 值即可。</p>
+<h2 id="maven"><a class="markdownIt-Anchor" href="#maven"></a> MAVEN</h2>
+<p>  Maven 没什么好说的，直接添加即可：</p>
 <ul>
 <li>变量名 <code>MAVEN_HOME</code></li>
 <li>变量值 <code>D:\Maven\apache-maven-3.5.4</code></li>
 </ul>
-<p>&nbsp;&nbsp; 在 path 中新增一条 <code>%MAVEN_HOME%\bin</code> 值即可。</p>
-<h1 id="用户变量"><a href="#用户变量" class="headerlink" title="用户变量"></a>用户变量</h1><h1 id="OneDrive"><a href="#OneDrive" class="headerlink" title="OneDrive"></a>OneDrive</h1><p>&nbsp;&nbsp;OneDrive 的默认路径可以在此处更改。</p>
+<p>   在 path 中新增一条 <code>%MAVEN_HOME%\bin</code> 值即可。</p>
+<h1 id="用户变量"><a class="markdownIt-Anchor" href="#用户变量"></a> 用户变量</h1>
+<h1 id="onedrive"><a class="markdownIt-Anchor" href="#onedrive"></a> OneDrive</h1>
+<p>  OneDrive 的默认路径可以在此处更改。</p>
 
     
   </div>
@@ -234,6 +240,32 @@ ga('send', 'pageview');
 
 
    
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，请我喝一杯咖啡</div>
+        <ul>
+        
+          <li class="item">
+            
+              <span>微信扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwm4O.png" alt>
+          </li>
+        
+          <li class="item">
+            
+              <span>支付宝扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwuCD.jpg" alt>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
 
    
   <div class="box-prev-next clearfix">
@@ -321,6 +353,7 @@ ga('send', 'pageview');
     
 
     
+<!-- <script src="../../../source/js/md5.min.js"></script> -->
 
 <!-- Gitalk评论插件通用代码 -->
 <div id="gitalk-container"></div>
@@ -335,7 +368,8 @@ const gitalk = new Gitalk({
   owner: 'VanXNF',
   // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
   // 50个字符串则会报错.
-  id: location.href,
+  // id: location.pathname.split('/').pop().substring(0, 49),
+  id: 'test',
   // id: location.pathname,
   admin: ['VanXNF'],
   // facebook-like distraction free mode

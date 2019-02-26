@@ -15,18 +15,18 @@
     <meta name="keywords" content="Android,kvm,">
   
 
-  <meta name="description" content="问题&amp;nbsp;&amp;nbsp;Android Studio 报 Android Studio: /dev/kvm device permission denied 错误。 解决方案 方案来自stackoverflow  &amp;nbsp;&amp;nbsp;As mentioned in the comments, starting with Ubuntu 18.04 and Linux Mint Tara yo">
+  <meta name="description" content="问题   Android Studio 报 Android Studio: /dev/kvm device permission denied 错误。  解决方案  方案来自stackoverflow    As mentioned in the comments, starting with Ubuntu 18.04 and Linux Mint Tara you need to first">
 <meta name="keywords" content="Android,kvm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android Studio: &#x2F;dev&#x2F;kvm device permission denied">
 <meta property="og:url" content="https://vanxnf.top/2018/10/06/Android-Studio-dev-kvm-device-permission-denied/index.html">
 <meta property="og:site_name" content="Welcome To Vientiane">
-<meta property="og:description" content="问题&amp;nbsp;&amp;nbsp;Android Studio 报 Android Studio: /dev/kvm device permission denied 错误。 解决方案 方案来自stackoverflow  &amp;nbsp;&amp;nbsp;As mentioned in the comments, starting with Ubuntu 18.04 and Linux Mint Tara yo">
+<meta property="og:description" content="问题   Android Studio 报 Android Studio: /dev/kvm device permission denied 错误。  解决方案  方案来自stackoverflow    As mentioned in the comments, starting with Ubuntu 18.04 and Linux Mint Tara you need to first">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-10-06T04:01:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android Studio: &#x2F;dev&#x2F;kvm device permission denied">
-<meta name="twitter:description" content="问题&amp;nbsp;&amp;nbsp;Android Studio 报 Android Studio: /dev/kvm device permission denied 错误。 解决方案 方案来自stackoverflow  &amp;nbsp;&amp;nbsp;As mentioned in the comments, starting with Ubuntu 18.04 and Linux Mint Tara yo">
+<meta name="twitter:description" content="问题   Android Studio 报 Android Studio: /dev/kvm device permission denied 错误。  解决方案  方案来自stackoverflow    As mentioned in the comments, starting with Ubuntu 18.04 and Linux Mint Tara you need to first">
 
   
 
@@ -151,7 +151,7 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#问题"><span class="toc-text">问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解决方案"><span class="toc-text">解决方案</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#问题"><span class="toc-text"> 问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解决方案"><span class="toc-text"> 解决方案</span></a></li></ol>
   </div>
 
 
@@ -197,15 +197,23 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>&nbsp;&nbsp;Android Studio 报 Android Studio: /dev/kvm device permission denied 错误。</p>
-<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><blockquote>
+      <h1 id="问题"><a class="markdownIt-Anchor" href="#问题"></a> 问题</h1>
+<p>  Android Studio 报 Android Studio: /dev/kvm device permission denied 错误。</p>
+<h1 id="解决方案"><a class="markdownIt-Anchor" href="#解决方案"></a> 解决方案</h1>
+<blockquote>
 <p>方案来自<a href="https://stackoverflow.com/questions/37300811/android-studio-dev-kvm-device-permission-denied" target="_blank" rel="noopener">stackoverflow</a></p>
 </blockquote>
-<p>&nbsp;&nbsp;As mentioned in the comments, starting with Ubuntu 18.04 and Linux Mint Tara you need to first<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install qemu-kvm.</span><br></pre></td></tr></table></figure></p>
-<p>To check the ownership of /dev/kvm use<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -al /dev/kvm</span><br></pre></td></tr></table></figure></p>
-<p>The user was root, the group kvm. To check which users are in the kvm group, use<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep kvm /etc/group</span><br></pre></td></tr></table></figure></p>
-<p>This returned<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kvm:x:some_number:</span><br></pre></td></tr></table></figure></p>
-<p>on my system: as there is nothing rightwards of the final :, there are no users in the kvm group.<br>To add the user yourname to the kvm group, you could use<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo adduser yourname kvm</span><br></pre></td></tr></table></figure></p>
+<p>  As mentioned in the comments, starting with Ubuntu 18.04 and Linux Mint Tara you need to first</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install qemu-kvm.</span><br></pre></td></tr></table></figure>
+<p>To check the ownership of /dev/kvm use</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -al /dev/kvm</span><br></pre></td></tr></table></figure>
+<p>The user was root, the group kvm. To check which users are in the kvm group, use</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep kvm /etc/group</span><br></pre></td></tr></table></figure>
+<p>This returned</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kvm:x:some_number:</span><br></pre></td></tr></table></figure>
+<p>on my system: as there is nothing rightwards of the final :, there are no users in the kvm group.<br>
+To add the user yourname to the kvm group, you could use</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo adduser yourname kvm</span><br></pre></td></tr></table></figure>
 <p>which adds the user to the group, and check once again with grep kvm /etc/group.</p>
 <p>As mentioned by @Knossos, you might want to log out and back in (or restart), for the permissions to take effect.</p>
 
@@ -216,6 +224,32 @@ ga('send', 'pageview');
 
 
    
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，请我喝一杯咖啡</div>
+        <ul>
+        
+          <li class="item">
+            
+              <span>微信扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwm4O.png" alt>
+          </li>
+        
+          <li class="item">
+            
+              <span>支付宝扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwuCD.jpg" alt>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
 
    
   <div class="box-prev-next clearfix">
@@ -303,6 +337,7 @@ ga('send', 'pageview');
     
 
     
+<!-- <script src="../../../source/js/md5.min.js"></script> -->
 
 <!-- Gitalk评论插件通用代码 -->
 <div id="gitalk-container"></div>
@@ -317,7 +352,8 @@ const gitalk = new Gitalk({
   owner: 'VanXNF',
   // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
   // 50个字符串则会报错.
-  id: location.href,
+  // id: location.pathname.split('/').pop().substring(0, 49),
+  id: 'test',
   // id: location.pathname,
   admin: ['VanXNF'],
   // facebook-like distraction free mode
