@@ -346,7 +346,7 @@ ga('send', 'pageview');
     
 
     
-<!-- <script src="../../../source/js/md5.min.js"></script> -->
+<script src="/js/md5.min.js"></script>
 
 <!-- Gitalk评论插件通用代码 -->
 <div id="gitalk-container"></div>
@@ -362,7 +362,7 @@ const gitalk = new Gitalk({
   // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
   // 50个字符串则会报错.
   // id: location.pathname.split('/').pop().substring(0, 49),
-  id: 'test',
+  id: md5(location.href),
   // id: location.pathname,
   admin: ['VanXNF'],
   // facebook-like distraction free mode
