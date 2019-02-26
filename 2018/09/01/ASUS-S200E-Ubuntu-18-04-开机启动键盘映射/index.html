@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>ASUS S200E Ubuntu 18.04 开机启动键盘映射 | Welcome To Vientiane</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="ASUS,S200E,Ubuntu 18.04 LTS,开机启动,键盘映射,">
+  
+
+  <meta name="description" content="设置键盘映射   老笔电 S200E 跑 Win10 有点吃力了，键盘上 Caps Lock 与左 Shift 键又坏了。趁着假期在家，在X宝上买了配套的键盘换上了（第一次拆超极本，真的费劲），又安装了一下 Ubuntu 18.04 LTS，重获新生啊有没有。    但是当我安装好Ubuntu，简单美化后，居然发现这款电脑键盘右上角有个专门的功能键？？？功能键就功能键吧，这时才发现X宝上买来换上">
+<meta name="keywords" content="ASUS,S200E,Ubuntu 18.04 LTS,开机启动,键盘映射">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ASUS S200E Ubuntu 18.04 开机启动键盘映射">
+<meta property="og:url" content="https://vanxnf.top/2018/09/01/ASUS-S200E-Ubuntu-18-04-开机启动键盘映射/index.html">
+<meta property="og:site_name" content="Welcome To Vientiane">
+<meta property="og:description" content="设置键盘映射   老笔电 S200E 跑 Win10 有点吃力了，键盘上 Caps Lock 与左 Shift 键又坏了。趁着假期在家，在X宝上买了配套的键盘换上了（第一次拆超极本，真的费劲），又安装了一下 Ubuntu 18.04 LTS，重获新生啊有没有。    但是当我安装好Ubuntu，简单美化后，居然发现这款电脑键盘右上角有个专门的功能键？？？功能键就功能键吧，这时才发现X宝上买来换上">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://s1.ax1x.com/2018/09/01/PxVtPg.png">
+<meta property="og:updated_time" content="2018-09-01T12:08:45.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ASUS S200E Ubuntu 18.04 开机启动键盘映射">
+<meta name="twitter:description" content="设置键盘映射   老笔电 S200E 跑 Win10 有点吃力了，键盘上 Caps Lock 与左 Shift 键又坏了。趁着假期在家，在X宝上买了配套的键盘换上了（第一次拆超极本，真的费劲），又安装了一下 Ubuntu 18.04 LTS，重获新生啊有没有。    但是当我安装好Ubuntu，简单美化后，居然发现这款电脑键盘右上角有个专门的功能键？？？功能键就功能键吧，这时才发现X宝上买来换上">
+<meta name="twitter:image" content="https://s1.ax1x.com/2018/09/01/PxVtPg.png">
+
+  
+
+  
+    <link rel="icon" href="https://s2.ax1x.com/2019/02/26/kIdbcj.png">
+  
+
+  <link href="/css/styles.css?v=c114cbeddx" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135193763-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?2459534f22d42d1bf3c0f6a86047e44b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+	(function(){
+	    var bp = document.createElement('script');
+	    var curProtocol = window.location.protocol.split(':')[0];
+	    if (curProtocol === 'https') {
+	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+	    }
+	    else {
+	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	    }
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+  </script>
+
+
+
+  
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+  <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
+
+</head>
+</html>
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">指北</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">指北</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/archives/" rel="noopener noreferrer" target="_self">
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/category/" rel="noopener noreferrer" target="_self">
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/tag/" rel="noopener noreferrer" target="_self">
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/about/" rel="noopener noreferrer" target="_self">
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/search/" rel="noopener noreferrer" target="_self">
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#设置键盘映射"><span class="toc-text"> 设置键盘映射</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#设置开机启动"><span class="toc-text"> 设置开机启动</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-ASUS-S200E-Ubuntu-18-04-开机启动键盘映射" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">ASUS S200E Ubuntu 18.04 开机启动键盘映射</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2018.09.01</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>VanXNF</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+  </span>
+
+
+
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h1 id="设置键盘映射"><a class="markdownIt-Anchor" href="#设置键盘映射"></a> 设置键盘映射</h1>
+<p>  老笔电 S200E 跑 Win10 有点吃力了，键盘上 Caps Lock 与左 Shift 键又坏了。趁着假期在家，在X宝上买了配套的键盘换上了（第一次拆超极本，真的费劲），又安装了一下 Ubuntu 18.04 LTS，重获新生啊有没有。</p>
+<hr>
+<p>  但是当我安装好Ubuntu，简单美化后，居然发现这款电脑键盘右上角有个专门的功能键？？？功能键就功能键吧，这时才发现X宝上买来换上的键盘右上角这颗功能键键帽印了 “insert” ？？？这怎么能忍，最关键的是这颗键在 Ubuntu 上就是个摆设：</p>
+<p>  终端下输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xev</span><br></pre></td></tr></table></figure>
+<p>  或者</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xev | grep keycode</span><br></pre></td></tr></table></figure>
+<p>  会弹出图形窗口，此时<strong>按键盘即可查看对应键信息</strong>。一看keycode 248 keysym空 ？？？</p>
+<p>  于是 Plan A 走起，然而事情并不简单，扣下旧键帽一看内部搭扣结构，果然和新的不一样，因吹斯听，换键帽路线 OVER；那就只能 Plan B了，本来键帽正确键闲着也就闲着好了，然而它印了 insert 那一切就不一样了，这是要逼死强迫症啊，然而作者算是Linux初级用户，没法自己想出解决方案，于是开始百度谷歌键盘映射，还真给我找到了，这里记录亲身测试过的一种（也是对我这种情况最简单的一种）</p>
+<p>  首先用上述指令获取<strong>想修改的键的keycode</strong>，以及<strong>目标键的键值（keysym）</strong></p>
+<p>  之后，就在 “~” 目录下创建 <strong>.xmodmaprc</strong>（在别的目录下也行啦）文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim ～/.xmodmaprc</span><br></pre></td></tr></table></figure>
+<p>  输入内容如下（248是我这颗空闲的功能键的 keycode，而 0xff63 则是键帽上的 insert 对应的 keysym）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keycode 248 = 0xff63 0xff63</span><br></pre></td></tr></table></figure>
+<p>  保存之后，在终端输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmodmap ~/.xmodmaprc</span><br></pre></td></tr></table></figure>
+<p>  即可直接生效。</p>
+<h1 id="设置开机启动"><a class="markdownIt-Anchor" href="#设置开机启动"></a> 设置开机启动</h1>
+<p>  但是每次开机后要重新执行一次，很麻烦对不对。于是想到了开机自动执行脚本，然而作者真的菜，搜遍搜索引擎，从 rc.local 到 systemd 全都失败了，看其他大佬的评论大概是xmodmap依赖于x桌面，没加载好前是执行不了的，然而还是没法解决。前前后后试了一天，都要放弃了，终于在个小论坛里看到个方案，尝试了一下真的成功了。</p>
+<p>  Ubuntu 自带一个 <strong>Startup Applications Preferences</strong></p>
+<p>  点击 add，name可以随便写，command中填</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/bash -c &quot;sleep 30; /usr/bin/xmodmap ~/.xmodmaprc&quot;</span><br></pre></td></tr></table></figure>
+<p>  Comment也可以随意填写，上面的代码里后面的是文件路径。</p>
+<p><img src="https://s1.ax1x.com/2018/09/01/PxVtPg.png" alt></p>
+<p>  重启后终于成功了。</p>
+<p>  完结撒花。</p>
+
+    
+  </div>
+
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，请我喝一杯咖啡</div>
+        <ul>
+        
+          <li class="item">
+            
+              <span>微信扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwm4O.png" alt>
+          </li>
+        
+          <li class="item">
+            
+              <span>支付宝扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwuCD.jpg" alt>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/2018/09/01/Ubuntu-1804-蓝牙鼠标连接失败问题解决-Bluetooth-Mouse-Won-t-Connect-after-Reboot/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="show pull-right" href="/2018/09/01/机械革命X6Ti-M2-安装-Ubuntu1804-LTS-注意事项/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/" rel="noopener noreferrer" target="_self">
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/" rel="noopener noreferrer" target="_self">
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/" rel="noopener noreferrer" target="_self">
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/" rel="noopener noreferrer" target="_self">
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/search/" rel="noopener noreferrer" target="_self">
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+<!-- Gitalk评论插件通用代码 -->
+<div id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+const gitalk = new Gitalk({
+  clientID: '60c9ba811318dfcc2df7',
+  clientSecret: '9759646a77acb3e9bfcf414806eabcbc55d9c082',
+  repo: 'VanXNF.github.io',
+  owner: 'VanXNF',
+  // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
+  // 50个字符串则会报错.
+  // id: location.pathname.split('/').pop().substring(0, 49),
+  id: location.pathname,
+  admin: ['VanXNF'],
+  // facebook-like distraction free mode
+  distractionFreeMode: false
+})
+gitalk.render('gitalk-container')
+</script>
+<!-- Gitalk代码结束 -->
+
+
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>

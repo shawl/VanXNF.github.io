@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>WPS 背景色随主题变色问题 | Welcome To Vientiane</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="Ubuntu 18.04 LTS,WPS,">
+  
+
+  <meta name="description" content="UBuntu  18.04 LTS 下使用 GNOME 深色主题会导致 WPS 出现一些奇奇怪怪的问题，之前使用了一段时间浅色主题应急，现在闲下来了，还是想办法解决一下，毕竟，深色党万岁。   问题描述   傻傻的 WPS 在我使用 GNOME 深色的主题后，就会出现如下图一样的问题：    实在是不能忍。同时，wps word 默认字体颜色会变为白色，背景色却仍旧是白色，搞得我好几次以为文档格">
+<meta name="keywords" content="Ubuntu 18.04 LTS,WPS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WPS 背景色随主题变色问题">
+<meta property="og:url" content="https://vanxnf.top/2018/11/03/WPS-背景色随主题变色问题/index.html">
+<meta property="og:site_name" content="Welcome To Vientiane">
+<meta property="og:description" content="UBuntu  18.04 LTS 下使用 GNOME 深色主题会导致 WPS 出现一些奇奇怪怪的问题，之前使用了一段时间浅色主题应急，现在闲下来了，还是想办法解决一下，毕竟，深色党万岁。   问题描述   傻傻的 WPS 在我使用 GNOME 深色的主题后，就会出现如下图一样的问题：    实在是不能忍。同时，wps word 默认字体颜色会变为白色，背景色却仍旧是白色，搞得我好几次以为文档格">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://s1.ax1x.com/2018/11/03/i4o2vT.png">
+<meta property="og:updated_time" content="2018-11-03T09:45:14.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WPS 背景色随主题变色问题">
+<meta name="twitter:description" content="UBuntu  18.04 LTS 下使用 GNOME 深色主题会导致 WPS 出现一些奇奇怪怪的问题，之前使用了一段时间浅色主题应急，现在闲下来了，还是想办法解决一下，毕竟，深色党万岁。   问题描述   傻傻的 WPS 在我使用 GNOME 深色的主题后，就会出现如下图一样的问题：    实在是不能忍。同时，wps word 默认字体颜色会变为白色，背景色却仍旧是白色，搞得我好几次以为文档格">
+<meta name="twitter:image" content="https://s1.ax1x.com/2018/11/03/i4o2vT.png">
+
+  
+
+  
+    <link rel="icon" href="https://s2.ax1x.com/2019/02/26/kIdbcj.png">
+  
+
+  <link href="/css/styles.css?v=c114cbeddx" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135193763-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?2459534f22d42d1bf3c0f6a86047e44b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+	(function(){
+	    var bp = document.createElement('script');
+	    var curProtocol = window.location.protocol.split(':')[0];
+	    if (curProtocol === 'https') {
+	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+	    }
+	    else {
+	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	    }
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+  </script>
+
+
+
+  
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+  <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
+
+</head>
+</html>
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">指北</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">指北</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/archives/" rel="noopener noreferrer" target="_self">
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/category/" rel="noopener noreferrer" target="_self">
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/tag/" rel="noopener noreferrer" target="_self">
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/about/" rel="noopener noreferrer" target="_self">
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/search/" rel="noopener noreferrer" target="_self">
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#问题描述"><span class="toc-text"> 问题描述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解决方案"><span class="toc-text"> 解决方案</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-WPS-背景色随主题变色问题" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">WPS 背景色随主题变色问题</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2018.11.03</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>VanXNF</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+  </span>
+
+
+
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <blockquote>
+<p>UBuntu  18.04 LTS 下使用 GNOME 深色主题会导致 WPS 出现一些奇奇怪怪的问题，之前使用了一段时间浅色主题应急，现在闲下来了，还是想办法解决一下，毕竟，深色党万岁。</p>
+</blockquote>
+<h1 id="问题描述"><a class="markdownIt-Anchor" href="#问题描述"></a> 问题描述</h1>
+<p>  傻傻的 WPS 在我使用 GNOME 深色的主题后，就会出现如下图一样的问题：<br>
+<img src="https://s1.ax1x.com/2018/11/03/i4o2vT.png" alt><br>
+  实在是不能忍。同时，wps word 默认字体颜色会变为白色，背景色却仍旧是白色，搞得我好几次以为文档格式有问题，缺字少表的。安装了 LibreOffice 和 CrossOver 装的 Office 2016 就没有这个问题。虽说能用，但是还是不能忍。</p>
+<h1 id="解决方案"><a class="markdownIt-Anchor" href="#解决方案"></a> 解决方案</h1>
+<p>  那么接下来是解决方案。首先，修改主题不太现实，万一我下次换个主题岂不是又要修改一遍。那么，问题的突破口就需要在 WPS 这里找了。在网上查到一些资料，desktop 快捷方式启动时可以传入一些参数。那么就编辑一下 WPS 的快捷方式，在里面试着指定主题就好了。</p>
+<p>  编辑 wps excel 的快捷方式：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /usr/share/applications/wps-office-et.desktop</span><br></pre></td></tr></table></figure>
+<p>  显示内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Comment=Use WPS Spreadsheets to analyze manage data.</span><br><span class="line">Comment[zh_CN]=使用WPS表格分析、管理数据</span><br><span class="line">Exec=/usr/bin/et %f</span><br><span class="line">GenericName=WPS Spreadsheets</span><br><span class="line">GenericName[zh_CN]=WPS 表格</span><br><span class="line">MimeType=application/wps-office.et;application/wps-office.ett;application/wps-office.xls;application/wps-office.xlt;application/vnd.ms-excel;application/msexcel;application/x-msexcel;application/wps-office.xlsx;application/wps-office.xltx;</span><br><span class="line">Name=WPS Spreadsheets</span><br><span class="line">Name[zh_CN]=WPS 表格</span><br><span class="line">StartupNotify=false</span><br><span class="line">Terminal=false</span><br><span class="line">Type=Application</span><br><span class="line">Categories=Office;Spreadsheet;Qt;</span><br><span class="line">X-DBUS-ServiceName=</span><br><span class="line">X-DBUS-StartupType=</span><br><span class="line">X-KDE-SubstituteUID=false</span><br><span class="line">X-KDE-Username=</span><br><span class="line">Icon=wps-office-etmain</span><br><span class="line">InitialPreference=3</span><br><span class="line">StartupWMClass=et</span><br></pre></td></tr></table></figure>
+<p>  将 <code>Exec=/usr/bin/et %f</code> 这一行修改为 <code>Exec=/usr/bin/et -style Vimix %f</code> 其中 Vimix 是我电脑上有的一个亮色主题，可以随意修改为自己有的就行。保存退出后再打开，问题已经解决。另外的两个也是同样的操作，就不再赘述。</p>
+
+    
+  </div>
+
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，请我喝一杯咖啡</div>
+        <ul>
+        
+          <li class="item">
+            
+              <span>微信扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwm4O.png" alt>
+          </li>
+        
+          <li class="item">
+            
+              <span>支付宝扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwuCD.jpg" alt>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/2018/10/27/Android-动画学习笔记/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="hide pull-right" href="/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/" rel="noopener noreferrer" target="_self">
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/" rel="noopener noreferrer" target="_self">
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/" rel="noopener noreferrer" target="_self">
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/" rel="noopener noreferrer" target="_self">
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/search/" rel="noopener noreferrer" target="_self">
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+<!-- Gitalk评论插件通用代码 -->
+<div id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+const gitalk = new Gitalk({
+  clientID: '60c9ba811318dfcc2df7',
+  clientSecret: '9759646a77acb3e9bfcf414806eabcbc55d9c082',
+  repo: 'VanXNF.github.io',
+  owner: 'VanXNF',
+  // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
+  // 50个字符串则会报错.
+  // id: location.pathname.split('/').pop().substring(0, 49),
+  id: location.pathname,
+  admin: ['VanXNF'],
+  // facebook-like distraction free mode
+  distractionFreeMode: false
+})
+gitalk.render('gitalk-container')
+</script>
+<!-- Gitalk代码结束 -->
+
+
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>

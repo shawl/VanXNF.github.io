@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>Ubuntu 18.04 LTS QQ、微信解决方案 | Welcome To Vientiane</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="Ubuntu 18.04 LTS,QQ,微信,">
+  
+
+  <meta name="description" content="#Deepin-wine 环境安装   首先安装deepin-wine环境：https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu 下载zip包（或用git方式克隆），解压到本地文件夹，在文件夹中打开终端，切换到 root 账户，输入： 1sh ./install.sh  安装应用容器   然后安装 deepin.com 应用容器，在 http://mi">
+<meta name="keywords" content="Ubuntu 18.04 LTS,QQ,微信">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu 18.04 LTS QQ、微信解决方案">
+<meta property="og:url" content="https://vanxnf.top/2018/09/01/Ubuntu-18-04-LTS-QQ、微信解决方案/index.html">
+<meta property="og:site_name" content="Welcome To Vientiane">
+<meta property="og:description" content="#Deepin-wine 环境安装   首先安装deepin-wine环境：https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu 下载zip包（或用git方式克隆），解压到本地文件夹，在文件夹中打开终端，切换到 root 账户，输入： 1sh ./install.sh  安装应用容器   然后安装 deepin.com 应用容器，在 http://mi">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-09-01T12:19:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ubuntu 18.04 LTS QQ、微信解决方案">
+<meta name="twitter:description" content="#Deepin-wine 环境安装   首先安装deepin-wine环境：https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu 下载zip包（或用git方式克隆），解压到本地文件夹，在文件夹中打开终端，切换到 root 账户，输入： 1sh ./install.sh  安装应用容器   然后安装 deepin.com 应用容器，在 http://mi">
+
+  
+
+  
+    <link rel="icon" href="https://s2.ax1x.com/2019/02/26/kIdbcj.png">
+  
+
+  <link href="/css/styles.css?v=c114cbeddx" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135193763-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?2459534f22d42d1bf3c0f6a86047e44b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+	(function(){
+	    var bp = document.createElement('script');
+	    var curProtocol = window.location.protocol.split(':')[0];
+	    if (curProtocol === 'https') {
+	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+	    }
+	    else {
+	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	    }
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+  </script>
+
+
+
+  
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+  <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
+
+</head>
+</html>
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">指北</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">指北</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/archives/" rel="noopener noreferrer" target="_self">
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/category/" rel="noopener noreferrer" target="_self">
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/tag/" rel="noopener noreferrer" target="_self">
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/about/" rel="noopener noreferrer" target="_self">
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/search/" rel="noopener noreferrer" target="_self">
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装应用容器"><span class="toc-text"> 安装应用容器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#托盘图标"><span class="toc-text"> 托盘图标</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-Ubuntu-18-04-LTS-QQ、微信解决方案" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">Ubuntu 18.04 LTS QQ、微信解决方案</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2018.09.01</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>VanXNF</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/Software/">Software</a>
+  </span>
+
+
+
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <p>#Deepin-wine 环境安装</p>
+<p>  首先安装deepin-wine环境：<a href="https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu" target="_blank" rel="noopener">https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu</a> 下载zip包（或用git方式克隆），解压到本地文件夹，在文件夹中打开终端，<strong>切换到 root 账户</strong>，输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh ./install.sh</span><br></pre></td></tr></table></figure>
+<h2 id="安装应用容器"><a class="markdownIt-Anchor" href="#安装应用容器"></a> 安装应用容器</h2>
+<p>  然后安装 <a href="http://deepin.com" target="_blank" rel="noopener">deepin.com</a> 应用容器，在 <a href="http://mirrors.aliyun.com/deepin/pool/non-free/d/" target="_blank" rel="noopener">http://mirrors.aliyun.com/deepin/pool/non-free/d/</a> 中下载想要的容器，**建议在终端下使用dpkg -i安装容器，**双击 deb 安装也可。以下为推荐容器:</p>
+<blockquote>
+<p>QQ：<a href="http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im/" target="_blank" rel="noopener">http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im/</a></p>
+</blockquote>
+<blockquote>
+<p>TIM：<a href="http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.office/" target="_blank" rel="noopener">http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.office/</a></p>
+</blockquote>
+<blockquote>
+<p>QQ轻聊版：<a href="http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im.light/" target="_blank" rel="noopener">http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im.light/</a></p>
+</blockquote>
+<blockquote>
+<p>微信：<a href="http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.wechat/" target="_blank" rel="noopener">http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.wechat/</a></p>
+</blockquote>
+<h2 id="托盘图标"><a class="markdownIt-Anchor" href="#托盘图标"></a> 托盘图标</h2>
+<p>  在 Ubuntu 18.04 LTS 中，应用的托盘图标依赖于 GNOME 插件 <strong>TopIconPlus</strong>，可以在 Ubuntu 商店直接安装 TopIconPlus 的 gnome-shell 扩展，也可以使用命令安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install gnome-shell-extension-top-icons-plus gnome-tweaks</span><br></pre></td></tr></table></figure>
+<p>  然后用gnome-tweaks开启这个扩展即可。</p>
+
+    
+  </div>
+
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，请我喝一杯咖啡</div>
+        <ul>
+        
+          <li class="item">
+            
+              <span>微信扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwm4O.png" alt>
+          </li>
+        
+          <li class="item">
+            
+              <span>支付宝扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwuCD.jpg" alt>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/2018/09/01/机械革命X6Ti-M2-安装-Ubuntu1804-LTS-注意事项/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="show pull-right" href="/2018/09/01/Ubuntu-18-04-LTS-使用-Minecraft-我的世界第三方启动器-HMCL/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/" rel="noopener noreferrer" target="_self">
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/" rel="noopener noreferrer" target="_self">
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/" rel="noopener noreferrer" target="_self">
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/" rel="noopener noreferrer" target="_self">
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/search/" rel="noopener noreferrer" target="_self">
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+<!-- Gitalk评论插件通用代码 -->
+<div id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+const gitalk = new Gitalk({
+  clientID: '60c9ba811318dfcc2df7',
+  clientSecret: '9759646a77acb3e9bfcf414806eabcbc55d9c082',
+  repo: 'VanXNF.github.io',
+  owner: 'VanXNF',
+  // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
+  // 50个字符串则会报错.
+  // id: location.pathname.split('/').pop().substring(0, 49),
+  id: location.pathname,
+  admin: ['VanXNF'],
+  // facebook-like distraction free mode
+  distractionFreeMode: false
+})
+gitalk.render('gitalk-container')
+</script>
+<!-- Gitalk代码结束 -->
+
+
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>

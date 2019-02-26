@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>一些小技巧 | Welcome To Vientiane</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="技巧,">
+  
+
+  <meta name="description" content="获取 github 中图片等文件的 raw 链接   先在 github 仓库中找到该文件，点击该文件，打开后在浏览器的 url 后面加上 ？raw=true ，并回车跳转，即可获取该文件的 raw 链接。  Hexo 博客站内文章链接   首先需要知道要链接的站内文章的 md 文件的文件名（不包含 .md），以如下形式即可形成链接，其中显示文字部分可选，不填则会自动显示该文章标题： 1&amp;#12">
+<meta name="keywords" content="技巧">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一些小技巧">
+<meta property="og:url" content="https://vanxnf.top/2018/09/02/一些小技巧/index.html">
+<meta property="og:site_name" content="Welcome To Vientiane">
+<meta property="og:description" content="获取 github 中图片等文件的 raw 链接   先在 github 仓库中找到该文件，点击该文件，打开后在浏览器的 url 后面加上 ？raw=true ，并回车跳转，即可获取该文件的 raw 链接。  Hexo 博客站内文章链接   首先需要知道要链接的站内文章的 md 文件的文件名（不包含 .md），以如下形式即可形成链接，其中显示文字部分可选，不填则会自动显示该文章标题： 1&amp;#12">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-10-04T12:25:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一些小技巧">
+<meta name="twitter:description" content="获取 github 中图片等文件的 raw 链接   先在 github 仓库中找到该文件，点击该文件，打开后在浏览器的 url 后面加上 ？raw=true ，并回车跳转，即可获取该文件的 raw 链接。  Hexo 博客站内文章链接   首先需要知道要链接的站内文章的 md 文件的文件名（不包含 .md），以如下形式即可形成链接，其中显示文字部分可选，不填则会自动显示该文章标题： 1&amp;#12">
+
+  
+
+  
+    <link rel="icon" href="https://s2.ax1x.com/2019/02/26/kIdbcj.png">
+  
+
+  <link href="/css/styles.css?v=c114cbeddx" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135193763-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?2459534f22d42d1bf3c0f6a86047e44b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+	(function(){
+	    var bp = document.createElement('script');
+	    var curProtocol = window.location.protocol.split(':')[0];
+	    if (curProtocol === 'https') {
+	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+	    }
+	    else {
+	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	    }
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+  </script>
+
+
+
+  
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+  <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
+
+</head>
+</html>
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">指北</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">指北</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/archives/" rel="noopener noreferrer" target="_self">
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/category/" rel="noopener noreferrer" target="_self">
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/tag/" rel="noopener noreferrer" target="_self">
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/about/" rel="noopener noreferrer" target="_self">
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/search/" rel="noopener noreferrer" target="_self">
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#获取-github-中图片等文件的-raw-链接"><span class="toc-text"> 获取 github 中图片等文件的 raw 链接</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#hexo-博客站内文章链接"><span class="toc-text"> Hexo 博客站内文章链接</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#hexo-hiker-主题中-about-categories-tags-页面不可用"><span class="toc-text"> Hexo Hiker 主题中 about、categories、tags 页面不可用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#使生成的-hexo-post-默认带有-categories属性"><span class="toc-text"> 使生成的 Hexo post 默认带有 categories属性</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#hexo-关闭某一篇文章的评论功能"><span class="toc-text"> Hexo 关闭某一篇文章的评论功能</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#取消开机"><span class="toc-text"> 取消开机</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ubuntu-windows-双系统时间问题"><span class="toc-text"> Ubuntu Windows 双系统时间问题</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-一些小技巧" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">一些小技巧</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2018.09.02</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>VanXNF</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+  </span>
+
+
+
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h5 id="获取-github-中图片等文件的-raw-链接"><a class="markdownIt-Anchor" href="#获取-github-中图片等文件的-raw-链接"></a> 获取 github 中图片等文件的 raw 链接</h5>
+<p>  先在 github 仓库中找到该文件，点击该文件，打开后在浏览器的 url 后面加上 <code>？raw=true</code> ，并回车跳转，即可获取该文件的 raw 链接。</p>
+<h5 id="hexo-博客站内文章链接"><a class="markdownIt-Anchor" href="#hexo-博客站内文章链接"></a> Hexo 博客站内文章链接</h5>
+<p>  首先需要知道要链接的站内文章的 md 文件的文件名（不包含 <code>.md</code>），以如下形式即可形成链接，其中显示文字部分可选，不填则会自动显示该文章标题：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% post_link 文件名 显示文字 %&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="hexo-hiker-主题中-about-categories-tags-页面不可用"><a class="markdownIt-Anchor" href="#hexo-hiker-主题中-about-categories-tags-页面不可用"></a> Hexo Hiker 主题中 about、categories、tags 页面不可用</h5>
+<p>  是因为这几个页面没有生成，需要手动生成一次：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>
+<p>  还需要做一些修改</p>
+<ol>
+<li>编辑 <code>source/tags/index.md</code>，在 date 下面一行加上一行 <code>layout: tags</code></li>
+<li>编辑 <code>source/categories/index.md</code>，在 date 下面一行加上 <code>layout: categories</code></li>
+<li>编辑 <code>source/about/index.md</code>，在 date 下面一行加上 <code>layout: about</code></li>
+<li>删除 <code>db.json</code></li>
+<li>执行 <code>hexo clean</code></li>
+<li>执行 <code>hexo g</code></li>
+</ol>
+<p>  注意：about 页面的内容需要自己手动编写。</p>
+<h5 id="使生成的-hexo-post-默认带有-categories属性"><a class="markdownIt-Anchor" href="#使生成的-hexo-post-默认带有-categories属性"></a> 使生成的 Hexo post 默认带有 <code>categories</code>属性</h5>
+<p>  编辑 <code>scaffolds\post.md</code>，在里面添加一行 <code>categories:</code>即可。</p>
+<h5 id="hexo-关闭某一篇文章的评论功能"><a class="markdownIt-Anchor" href="#hexo-关闭某一篇文章的评论功能"></a> Hexo 关闭某一篇文章的评论功能</h5>
+<p>  只需要在标题下添加一行 <code>comments: false</code> 即可。</p>
+<h5 id="取消开机"><a class="markdownIt-Anchor" href="#取消开机"></a> 取消开机</h5>
+<p>  在完全开机前，通过快捷键 <code>Ctrl + Alt + Del</code> 可取消关机。</p>
+<h5 id="ubuntu-windows-双系统时间问题"><a class="markdownIt-Anchor" href="#ubuntu-windows-双系统时间问题"></a> Ubuntu Windows 双系统时间问题</h5>
+<p>  Ubuntu 下依次执行下列命令即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ntpdate</span><br><span class="line">sudo ntpdate time.windows.com</span><br><span class="line">sudo hwclock --localtime --systohc</span><br></pre></td></tr></table></figure>
+<p>  另外友情提示：时间错误会导致网页加载失败，下次打不开网页记得先检查时间，不要动不动就卸网卡…</p>
+
+    
+  </div>
+
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，请我喝一杯咖啡</div>
+        <ul>
+        
+          <li class="item">
+            
+              <span>微信扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwm4O.png" alt>
+          </li>
+        
+          <li class="item">
+            
+              <span>支付宝扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwuCD.jpg" alt>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/2018/09/01/Ubuntu-18-04-LTS-开发环境配置/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="show pull-right" href="/2018/09/02/Hexo-主题同步/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/" rel="noopener noreferrer" target="_self">
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/" rel="noopener noreferrer" target="_self">
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/" rel="noopener noreferrer" target="_self">
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/" rel="noopener noreferrer" target="_self">
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/search/" rel="noopener noreferrer" target="_self">
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+<!-- Gitalk评论插件通用代码 -->
+<div id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+const gitalk = new Gitalk({
+  clientID: '60c9ba811318dfcc2df7',
+  clientSecret: '9759646a77acb3e9bfcf414806eabcbc55d9c082',
+  repo: 'VanXNF.github.io',
+  owner: 'VanXNF',
+  // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
+  // 50个字符串则会报错.
+  // id: location.pathname.split('/').pop().substring(0, 49),
+  id: location.pathname,
+  admin: ['VanXNF'],
+  // facebook-like distraction free mode
+  distractionFreeMode: false
+})
+gitalk.render('gitalk-container')
+</script>
+<!-- Gitalk代码结束 -->
+
+
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>

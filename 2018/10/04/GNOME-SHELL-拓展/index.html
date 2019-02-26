@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>GNOME SHELL 拓展 | Welcome To Vientiane</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="GNOME,SHELL,">
+  
+
+  <meta name="description" content="在使用 Ubuntu 18.04 后发现了不少好用的 GNOME SHELL 拓展插件，在此做一个推荐及备份。以下插件排名不分先后。   system-monitor  Display system informations in gnome shell status bar, such as memory usage, cpu usage, network rates…  &amp;amp;nsbp;">
+<meta name="keywords" content="GNOME,SHELL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GNOME SHELL 拓展">
+<meta property="og:url" content="https://vanxnf.top/2018/10/04/GNOME-SHELL-拓展/index.html">
+<meta property="og:site_name" content="Welcome To Vientiane">
+<meta property="og:description" content="在使用 Ubuntu 18.04 后发现了不少好用的 GNOME SHELL 拓展插件，在此做一个推荐及备份。以下插件排名不分先后。   system-monitor  Display system informations in gnome shell status bar, such as memory usage, cpu usage, network rates…  &amp;amp;nsbp;">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-10-04T12:11:55.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GNOME SHELL 拓展">
+<meta name="twitter:description" content="在使用 Ubuntu 18.04 后发现了不少好用的 GNOME SHELL 拓展插件，在此做一个推荐及备份。以下插件排名不分先后。   system-monitor  Display system informations in gnome shell status bar, such as memory usage, cpu usage, network rates…  &amp;amp;nsbp;">
+
+  
+
+  
+    <link rel="icon" href="https://s2.ax1x.com/2019/02/26/kIdbcj.png">
+  
+
+  <link href="/css/styles.css?v=c114cbeddx" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135193763-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?2459534f22d42d1bf3c0f6a86047e44b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+	(function(){
+	    var bp = document.createElement('script');
+	    var curProtocol = window.location.protocol.split(':')[0];
+	    if (curProtocol === 'https') {
+	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+	    }
+	    else {
+	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	    }
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+  </script>
+
+
+
+  
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+  <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
+
+</head>
+</html>
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">指北</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">指北</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/archives/" rel="noopener noreferrer" target="_self">
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/category/" rel="noopener noreferrer" target="_self">
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/tag/" rel="noopener noreferrer" target="_self">
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/about/" rel="noopener noreferrer" target="_self">
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/search/" rel="noopener noreferrer" target="_self">
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#system-monitor"><span class="toc-text"> system-monitor</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#clipboard-indicator"><span class="toc-text"> Clipboard Indicator</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#coverflow-alt-tab"><span class="toc-text"> Coverflow Alt-Tab</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#dash-to-dock"><span class="toc-text"> Dash to Dock</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#gnome-shell-audio-output-switcher"><span class="toc-text"> Gnome Shell Audio Output Switcher</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#lock-keys"><span class="toc-text"> Lock Keys</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#multi-monitors-add-on"><span class="toc-text"> Multi Monitors Add-On</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#openweather"><span class="toc-text"> OpenWeather</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#pixel-saver"><span class="toc-text"> Pixel Saver</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#screenshot-tool"><span class="toc-text"> Screenshot Tool</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#topicons-plus"><span class="toc-text"> TopIcons Plus</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#user-themes"><span class="toc-text"> User Themes</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#suspend-button"><span class="toc-text"> Suspend Button</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-GNOME-SHELL-拓展" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">GNOME SHELL 拓展</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2018.10.04</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>VanXNF</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/Software/">Software</a>
+  </span>
+
+
+
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <blockquote>
+<p>在使用 Ubuntu 18.04 后发现了不少好用的 GNOME SHELL 拓展插件，在此做一个推荐及备份。以下插件排名不分先后。</p>
+</blockquote>
+<h1 id="system-monitor"><a class="markdownIt-Anchor" href="#system-monitor"></a> <a href="https://extensions.gnome.org/extension/120/system-monitor/" target="_blank" rel="noopener">system-monitor</a></h1>
+<blockquote>
+<p>Display system informations in gnome shell status bar, such as memory usage, cpu usage, network rates…</p>
+</blockquote>
+<p>&amp;nsbp; 在顶栏显示系统硬件状态，十分直观。在 Ubuntu 软件商店中即可安装，可能会遇到依赖问题，会有提示，按照具体提示安装即可，我当时提示缺少 Clutter，那就安装咯：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install gir1.2-clutter-1.0 gir1.2-clutter-gst-3.0 gir1.2-gtkclutter-1.0</span><br></pre></td></tr></table></figure>
+<h1 id="clipboard-indicator"><a class="markdownIt-Anchor" href="#clipboard-indicator"></a> <a href="https://extensions.gnome.org/extension/779/clipboard-indicator/" target="_blank" rel="noopener">Clipboard Indicator</a></h1>
+<blockquote>
+<p>Clipboard Manager extension for Gnome-Shell - Adds a clipboard indicator to the top panel, and caches clipboard history.</p>
+</blockquote>
+<p>  剪贴板管理，在顶栏查看选择历史剪贴板。</p>
+<h1 id="coverflow-alt-tab"><a class="markdownIt-Anchor" href="#coverflow-alt-tab"></a> <a href="https://extensions.gnome.org/extension/97/coverflow-alt-tab/" target="_blank" rel="noopener">Coverflow Alt-Tab</a></h1>
+<blockquote>
+<p>Replacement of Alt-Tab, iterates through windows in a cover-flow manner.</p>
+</blockquote>
+<h1 id="dash-to-dock"><a class="markdownIt-Anchor" href="#dash-to-dock"></a> <a href="https://extensions.gnome.org/extension/307/dash-to-dock/" target="_blank" rel="noopener">Dash to Dock</a></h1>
+<blockquote>
+<p>A dock for the Gnome Shell. This extension moves the dash out of the overview transforming it in a dock for an easier launching of applications and a faster switching between windows and desktops. Side and bottom placement options are available.</p>
+</blockquote>
+<p>  取代系统 dock 栏。</p>
+<h1 id="gnome-shell-audio-output-switcher"><a class="markdownIt-Anchor" href="#gnome-shell-audio-output-switcher"></a> <a href="https://extensions.gnome.org/extension/1028/gnome-shell-audio-output-switcher/" target="_blank" rel="noopener">Gnome Shell Audio Output Switcher</a></h1>
+<blockquote>
+<p>Gnome-Shell Extension: Easily switch between your audio outputs from the system menu.</p>
+</blockquote>
+<h1 id="lock-keys"><a class="markdownIt-Anchor" href="#lock-keys"></a> <a href="https://extensions.gnome.org/extension/36/lock-keys/" target="_blank" rel="noopener">Lock Keys</a></h1>
+<blockquote>
+<p>Numlock &amp; Capslock status on the panel.</p>
+</blockquote>
+<h1 id="multi-monitors-add-on"><a class="markdownIt-Anchor" href="#multi-monitors-add-on"></a> <a href="https://extensions.gnome.org/extension/921/multi-monitors-add-on/" target="_blank" rel="noopener">Multi Monitors Add-On</a></h1>
+<blockquote>
+<p>Add multiple monitors overview and panel for gnome-shell.</p>
+</blockquote>
+<p>  外接屏幕神器。</p>
+<h1 id="openweather"><a class="markdownIt-Anchor" href="#openweather"></a> <a href="https://extensions.gnome.org/extension/750/openweather/" target="_blank" rel="noopener">OpenWeather</a></h1>
+<blockquote>
+<p>Weather extension to display weather information from <a href="https://openweathermap.org/" target="_blank" rel="noopener">https://openweathermap.org/</a> or <a href="https://darksky.net" target="_blank" rel="noopener">https://darksky.net</a> for almost all locations in the world.<br>
+For <a href="http://openweathermap.org" target="_blank" rel="noopener">openweathermap.org</a>, you can either use the extensions default-key or register at <a href="https://openweathermap.org/appid" target="_blank" rel="noopener">https://openweathermap.org/appid</a> and set the appropriate switch in the preferences dialog to “off”.<br>
+For Dark Sky you have to register at <a href="https://darksky.net/dev/register" target="_blank" rel="noopener">https://darksky.net/dev/register</a> and get a personal API-key.<br>
+Since version 29 this extensions uses coordinates to store the locations and makes the names editable to support multiple weather-providers!<br>
+If you update from versions prior to 29 to 29 or greater (with <a href="http://darksky.net" target="_blank" rel="noopener">darksky.net</a> - support) you have to recreate your locations.</p>
+</blockquote>
+<h1 id="pixel-saver"><a class="markdownIt-Anchor" href="#pixel-saver"></a> <a href="https://extensions.gnome.org/extension/723/pixel-saver/" target="_blank" rel="noopener">Pixel Saver</a></h1>
+<blockquote>
+<p>Pixel Saver is designed to save pixel by fusing activity bar and title bar in a natural way.</p>
+</blockquote>
+<h1 id="screenshot-tool"><a class="markdownIt-Anchor" href="#screenshot-tool"></a> <a href="https://extensions.gnome.org/extension/1112/screenshot-tool/" target="_blank" rel="noopener">Screenshot Tool</a></h1>
+<blockquote>
+<p>Conveniently create, copy, store and upload screenshots.</p>
+</blockquote>
+<h1 id="topicons-plus"><a class="markdownIt-Anchor" href="#topicons-plus"></a> <a href="https://extensions.gnome.org/extension/1031/topicons/" target="_blank" rel="noopener">TopIcons Plus</a></h1>
+<blockquote>
+<p>This extension moves legacy tray icons (bottom left of Gnome Shell) to the top panel. It is a fork from the original extension from ag with settings for icon opacity, saturation, padding, size and tray position, along with a few minor fixes and integration with the Skype integration extension.</p>
+</blockquote>
+<h1 id="user-themes"><a class="markdownIt-Anchor" href="#user-themes"></a> <a href="https://extensions.gnome.org/extension/19/user-themes/" target="_blank" rel="noopener">User Themes</a></h1>
+<blockquote>
+<p>Load shell themes from user directory.</p>
+</blockquote>
+<p>  万物之源。</p>
+<h1 id="suspend-button"><a class="markdownIt-Anchor" href="#suspend-button"></a> <a href="https://extensions.gnome.org/extension/826/suspend-button/" target="_blank" rel="noopener">Suspend Button</a></h1>
+<blockquote>
+<p>Allows to modify the suspend/shutdown button in the status menu.</p>
+</blockquote>
+
+    
+  </div>
+
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，请我喝一杯咖啡</div>
+        <ul>
+        
+          <li class="item">
+            
+              <span>微信扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwm4O.png" alt>
+          </li>
+        
+          <li class="item">
+            
+              <span>支付宝扫一扫</span>
+            
+            <img src="https://s2.ax1x.com/2019/02/26/kIwuCD.jpg" alt>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/2018/09/30/Markdown-转换为-Word、Pdf-解决方案/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="show pull-right" href="/2018/10/04/Android-Studio-资源文件分包/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/" rel="noopener noreferrer" target="_self">
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/" rel="noopener noreferrer" target="_self">
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/" rel="noopener noreferrer" target="_self">
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/" rel="noopener noreferrer" target="_self">
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/search/" rel="noopener noreferrer" target="_self">
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+
+<!-- Gitalk评论插件通用代码 -->
+<div id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+const gitalk = new Gitalk({
+  clientID: '60c9ba811318dfcc2df7',
+  clientSecret: '9759646a77acb3e9bfcf414806eabcbc55d9c082',
+  repo: 'VanXNF.github.io',
+  owner: 'VanXNF',
+  // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
+  // 50个字符串则会报错.
+  // id: location.pathname.split('/').pop().substring(0, 49),
+  id: location.pathname,
+  admin: ['VanXNF'],
+  // facebook-like distraction free mode
+  distractionFreeMode: false
+})
+gitalk.render('gitalk-container')
+</script>
+<!-- Gitalk代码结束 -->
+
+
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>
