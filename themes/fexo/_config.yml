@@ -78,16 +78,16 @@ backtop:
   about: false
 
 donation:
-  show: false
+  show: true
   btn_text: 支持一下
   tip: 扫一扫，请我喝一杯咖啡
   items:
     - type: 微信
       text: 微信扫一扫
-      imgUrl: https://s2.ax1x.com/2019/02/26/kIwm4O.png
+      imgUrl: https://s2.ax1x.com/2019/02/26/kIhuj0.png
     - type: 支付宝
       text: 支付宝扫一扫
-      imgUrl: https://s2.ax1x.com/2019/02/26/kIwuCD.jpg
+      imgUrl: https://s2.ax1x.com/2019/02/26/kIhENQ.jpg
 
 
 
