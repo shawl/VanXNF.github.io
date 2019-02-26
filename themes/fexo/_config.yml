@@ -78,7 +78,7 @@ backtop:
   about: false
 
 donation:
-  show: true
+  show: false
   btn_text: 支持一下
   tip: 扫一扫，请我喝一杯咖啡
   items:
