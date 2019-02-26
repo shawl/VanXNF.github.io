@@ -15,18 +15,18 @@
     <meta name="keywords" content="Ubuntu 18.04 LTS,蓝牙鼠标,Bluetooth Mouse,">
   
 
-  <meta name="description" content="方案主要参考自 Ubuntu Forums    首先 终端下输入 1bluetoothctl   然后输入 1list   看清楚 Controller 的 mac 地址，我的是 AC:2B:6E:91:65:4E ，在终端输入 1select AC:2B:6E:91:65:4E   然后输入 1show   此时确保你的鼠标配对已打开，处于可被发现状态，输入 1scan on   在输出信">
+  <meta name="description" content="&amp;nbsp;&amp;nbsp;方案主要参考自 Ubuntu Forums  &amp;nbsp;&amp;nbsp;首先 终端下输入1bluetoothctl &amp;nbsp;&amp;nbsp;然后输入1list &amp;nbsp;&amp;nbsp;看清楚 Controller 的 mac 地址，我的是 AC:2B:6E:91:65:4E ，在终端输入1select AC:2B:6E:91:65:4E &amp;nbsp;&amp;nbsp;然后输入1sh">
 <meta name="keywords" content="Ubuntu 18.04 LTS,蓝牙鼠标,Bluetooth Mouse">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu 1804 蓝牙鼠标连接失败问题解决 Bluetooth Mouse Won&#39;t Connect after Reboot">
 <meta property="og:url" content="https://vanxnf.top/2018/09/01/Ubuntu-1804-蓝牙鼠标连接失败问题解决-Bluetooth-Mouse-Won-t-Connect-after-Reboot/index.html">
 <meta property="og:site_name" content="Welcome To Vientiane">
-<meta property="og:description" content="方案主要参考自 Ubuntu Forums    首先 终端下输入 1bluetoothctl   然后输入 1list   看清楚 Controller 的 mac 地址，我的是 AC:2B:6E:91:65:4E ，在终端输入 1select AC:2B:6E:91:65:4E   然后输入 1show   此时确保你的鼠标配对已打开，处于可被发现状态，输入 1scan on   在输出信">
+<meta property="og:description" content="&amp;nbsp;&amp;nbsp;方案主要参考自 Ubuntu Forums  &amp;nbsp;&amp;nbsp;首先 终端下输入1bluetoothctl &amp;nbsp;&amp;nbsp;然后输入1list &amp;nbsp;&amp;nbsp;看清楚 Controller 的 mac 地址，我的是 AC:2B:6E:91:65:4E ，在终端输入1select AC:2B:6E:91:65:4E &amp;nbsp;&amp;nbsp;然后输入1sh">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-09-01T12:04:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu 1804 蓝牙鼠标连接失败问题解决 Bluetooth Mouse Won&#39;t Connect after Reboot">
-<meta name="twitter:description" content="方案主要参考自 Ubuntu Forums    首先 终端下输入 1bluetoothctl   然后输入 1list   看清楚 Controller 的 mac 地址，我的是 AC:2B:6E:91:65:4E ，在终端输入 1select AC:2B:6E:91:65:4E   然后输入 1show   此时确保你的鼠标配对已打开，处于可被发现状态，输入 1scan on   在输出信">
+<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;方案主要参考自 Ubuntu Forums  &amp;nbsp;&amp;nbsp;首先 终端下输入1bluetoothctl &amp;nbsp;&amp;nbsp;然后输入1list &amp;nbsp;&amp;nbsp;看清楚 Controller 的 mac 地址，我的是 AC:2B:6E:91:65:4E ，在终端输入1select AC:2B:6E:91:65:4E &amp;nbsp;&amp;nbsp;然后输入1sh">
 
   
 
@@ -192,28 +192,19 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <p>  方案主要参考自 <a href="https://ubuntuforums.org/showthread.php?t=2390542" target="_blank" rel="noopener">Ubuntu Forums</a></p>
+      <p>&nbsp;&nbsp;方案主要参考自 <a href="https://ubuntuforums.org/showthread.php?t=2390542" target="_blank" rel="noopener">Ubuntu Forums</a></p>
 <hr>
-<p>  首先 终端下输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bluetoothctl</span><br></pre></td></tr></table></figure>
-<p>  然后输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list</span><br></pre></td></tr></table></figure>
-<p>  看清楚 <strong>Controller 的 mac 地址</strong>，我的是 AC:2B:6E:91:65:4E ，在终端输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select AC:2B:6E:91:65:4E</span><br></pre></td></tr></table></figure>
-<p>  然后输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show</span><br></pre></td></tr></table></figure>
-<p>  <strong>此时确保你的鼠标配对已打开，处于可被发现状态</strong>，输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scan on</span><br></pre></td></tr></table></figure>
-<p>  在输出信息中找到你的鼠标后，即可输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scan off</span><br></pre></td></tr></table></figure>
-<p>  并记下你<strong>鼠标的mac地址</strong>，如果你的鼠标连接时要求 pin code，则输入以下命令，若不用则跳过这一条（当然不确定的话需不需要 pin code 就执行一下，也没什么影响的）。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">agent on</span><br></pre></td></tr></table></figure>
-<p>  接下来使用上一条记下的鼠标mac地址， 输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pair DC:2C:26:AE:35:41</span><br></pre></td></tr></table></figure>
-<p>  出现 Pairing successful，即配对成功，中间要求 pin code, 就输入对应 pin code即可。这时配对成功，但是鼠标还不能操作，依次输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">connect DC:2C:26:AE:35:41</span><br><span class="line">trust DC:2C:26:AE:35:41</span><br></pre></td></tr></table></figure>
-<p>  鼠标即可正常使用了。</p>
-<p>  <a href="/2018/09/01/Windows-10-和-Ubuntu-18-04-LTS-双系统蓝牙鼠标连接问题的解决方案/" title="Windows 10 和 Ubuntu 18.04 LTS 双系统蓝牙鼠标连接问题的解决方案">Windows 10 和 Ubuntu 18.04 LTS 双系统蓝牙鼠标连接问题的解决方案</a></p>
+<p>&nbsp;&nbsp;首先 终端下输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bluetoothctl</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;然后输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;看清楚 <strong>Controller 的 mac 地址</strong>，我的是 AC:2B:6E:91:65:4E ，在终端输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select AC:2B:6E:91:65:4E</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;然后输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;<strong>此时确保你的鼠标配对已打开，处于可被发现状态</strong>，输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scan on</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;在输出信息中找到你的鼠标后，即可输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scan off</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;并记下你<strong>鼠标的mac地址</strong>，如果你的鼠标连接时要求 pin code，则输入以下命令，若不用则跳过这一条（当然不确定的话需不需要 pin code 就执行一下，也没什么影响的）。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">agent on</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;接下来使用上一条记下的鼠标mac地址， 输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pair DC:2C:26:AE:35:41</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;出现 Pairing successful，即配对成功，中间要求 pin code, 就输入对应 pin code即可。这时配对成功，但是鼠标还不能操作，依次输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">connect DC:2C:26:AE:35:41</span><br><span class="line">trust DC:2C:26:AE:35:41</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;鼠标即可正常使用了。</p>
+<p>&nbsp;&nbsp;<a href="/2018/09/01/Windows-10-和-Ubuntu-18-04-LTS-双系统蓝牙鼠标连接问题的解决方案/" title="Windows 10 和 Ubuntu 18.04 LTS 双系统蓝牙鼠标连接问题的解决方案">Windows 10 和 Ubuntu 18.04 LTS 双系统蓝牙鼠标连接问题的解决方案</a></p>
 
     
   </div>
@@ -323,7 +314,7 @@ const gitalk = new Gitalk({
   owner: 'VanXNF',
   // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
   // 50个字符串则会报错.
-  id: window.location.pathname.split('/').pop().substring(0, 49),
+  id: location.href,
   // id: location.pathname,
   admin: ['VanXNF'],
   // facebook-like distraction free mode

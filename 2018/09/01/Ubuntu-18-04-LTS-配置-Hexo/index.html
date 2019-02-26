@@ -15,18 +15,18 @@
     <meta name="keywords" content="Ubuntu 18.04 LTS,Hexo,">
   
 
-  <meta name="description" content="GitHub Pages + Hexo 搭建博客可查看 Ubuntu 18.04 LTS GitHub Pages + Hexo 搭建博客   环境搭建   git 首先需要在系统中安装git：sudo apt install git 可以先检查是否安装git：git --version 然后是对git的一些基本配置：   12git config --global user.name &amp;quot">
+  <meta name="description" content="GitHub Pages + Hexo 搭建博客可查看 Ubuntu 18.04 LTS GitHub Pages + Hexo 搭建博客  环境搭建 git首先需要在系统中安装git：sudo apt install git可以先检查是否安装git：git --version然后是对git的一些基本配置：   12git config --global user.name &amp;quot;usern">
 <meta name="keywords" content="Ubuntu 18.04 LTS,Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu 18.04 LTS 配置 Hexo">
 <meta property="og:url" content="https://vanxnf.top/2018/09/01/Ubuntu-18-04-LTS-配置-Hexo/index.html">
 <meta property="og:site_name" content="Welcome To Vientiane">
-<meta property="og:description" content="GitHub Pages + Hexo 搭建博客可查看 Ubuntu 18.04 LTS GitHub Pages + Hexo 搭建博客   环境搭建   git 首先需要在系统中安装git：sudo apt install git 可以先检查是否安装git：git --version 然后是对git的一些基本配置：   12git config --global user.name &amp;quot">
+<meta property="og:description" content="GitHub Pages + Hexo 搭建博客可查看 Ubuntu 18.04 LTS GitHub Pages + Hexo 搭建博客  环境搭建 git首先需要在系统中安装git：sudo apt install git可以先检查是否安装git：git --version然后是对git的一些基本配置：   12git config --global user.name &amp;quot;usern">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-09-01T07:17:54.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu 18.04 LTS 配置 Hexo">
-<meta name="twitter:description" content="GitHub Pages + Hexo 搭建博客可查看 Ubuntu 18.04 LTS GitHub Pages + Hexo 搭建博客   环境搭建   git 首先需要在系统中安装git：sudo apt install git 可以先检查是否安装git：git --version 然后是对git的一些基本配置：   12git config --global user.name &amp;quot">
+<meta name="twitter:description" content="GitHub Pages + Hexo 搭建博客可查看 Ubuntu 18.04 LTS GitHub Pages + Hexo 搭建博客  环境搭建 git首先需要在系统中安装git：sudo apt install git可以先检查是否安装git：git --version然后是对git的一些基本配置：   12git config --global user.name &amp;quot;usern">
 
   
 
@@ -151,7 +151,7 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#环境搭建"><span class="toc-text"> 环境搭建</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装-hexo"><span class="toc-text"> 安装 Hexo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-主题"><span class="toc-text"> Hexo 主题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常用指令"><span class="toc-text"> 常用指令</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#环境搭建"><span class="toc-text">环境搭建</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装-Hexo"><span class="toc-text">安装 Hexo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo-主题"><span class="toc-text">Hexo 主题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常用指令"><span class="toc-text">常用指令</span></a></li></ol>
   </div>
 
 
@@ -199,94 +199,59 @@ ga('send', 'pageview');
     
       <p>GitHub Pages + Hexo 搭建博客可查看 <a href="/2018/09/01/Ubuntu-18.04-LTS-GitHub-Pages-Hexo-搭建博客/" title="Ubuntu 18.04 LTS GitHub Pages + Hexo 搭建博客">Ubuntu 18.04 LTS GitHub Pages + Hexo 搭建博客</a></p>
 <hr>
-<h1 id="环境搭建"><a class="markdownIt-Anchor" href="#环境搭建"></a> 环境搭建</h1>
-<ul>
-<li>
-<p><strong>git</strong><br>
-首先需要在系统中安装git：<code>sudo apt install git</code><br>
-可以先检查是否安装git：<code>git --version</code><br>
-然后是对git的一些基本配置：</p>
+<h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><ul>
+<li><p><strong>git</strong><br>首先需要在系统中安装git：<code>sudo apt install git</code><br>可以先检查是否安装git：<code>git --version</code><br>然后是对git的一些基本配置：</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p><strong>node.js</strong><br>
-安装：<code>sudo apt install nodejs</code></p>
+<li><p><strong>node.js</strong><br>安装：<code>sudo apt install nodejs</code></p>
 </li>
-<li>
-<p><strong>npm</strong><br>
-npm ( nodejs的包管理工具)：<code>sudo apt insatll npm</code><br>
-管理工具的使用：<br>
-升级新版npm：<code>sudo npm install npm -g</code><br>
-使用npm安装模块：<code>npm install module_name</code><br>
-查看所有全局安装的npm模块：<code>npm ls -g</code><br>
-模块的卸载：<code>npm uninstall module_name</code><br>
-更新模块：<code>npm update module_name</code></p>
+<li><p><strong>npm</strong><br>npm ( nodejs的包管理工具)：<code>sudo apt insatll npm</code><br>管理工具的使用：<br>升级新版npm：<code>sudo npm install npm -g</code><br>使用npm安装模块：<code>npm install module_name</code><br>查看所有全局安装的npm模块：<code>npm ls -g</code><br>模块的卸载：<code>npm uninstall module_name</code><br>更新模块：<code>npm update module_name</code></p>
 </li>
 </ul>
-<h1 id="安装-hexo"><a class="markdownIt-Anchor" href="#安装-hexo"></a> 安装 Hexo</h1>
-<ol>
-<li>
-<p>创建目录</p>
+<h1 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h1><ol>
+<li><p>创建目录</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir hexo</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>切换目录</p>
+<li><p>切换目录</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd hexo</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>全局安装 Hexo</p>
+<li><p>全局安装 Hexo</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>初始化 Hexo</p>
+<li><p>初始化 Hexo</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>运行 Hexo</p>
+<li><p>运行 Hexo</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p>成功运行的话会提示：</p>
+<p> 成功运行的话会提示：</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h1 id="hexo-主题"><a class="markdownIt-Anchor" href="#hexo-主题"></a> Hexo 主题</h1>
-<p>  Hexo 主题可以从这里找：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a><br>
-  推荐安装主题 NexT<br>
-  到目录 hexo 下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/Documents/hexo/</span><br><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-<p>  并在目录 hexo 下的 _config.yml 中找到 theme: 修改后面的参数，默认是 landscape，改为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-<h1 id="常用指令"><a class="markdownIt-Anchor" href="#常用指令"></a> 常用指令</h1>
-<ul>
-<li>
-<p>新建博客项目，默认为指定的 folder 文件夹;</p>
+<h1 id="Hexo-主题"><a href="#Hexo-主题" class="headerlink" title="Hexo 主题"></a>Hexo 主题</h1><p>&nbsp;&nbsp;Hexo 主题可以从这里找：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a><br>&nbsp;&nbsp;推荐安装主题 NexT<br>&nbsp;&nbsp;到目录 hexo 下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/Documents/hexo/</span><br><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;并在目录 hexo 下的 _config.yml 中找到 theme: 修改后面的参数，默认是 landscape，改为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure></p>
+<h1 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h1><ul>
+<li><p>新建博客项目，默认为指定的 folder 文件夹;</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init [folder]</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>新建文章，总共有<code>post</code>、<code>draft</code>、<code>page</code>三种 layout，文章以你指定的 title 名创建，title 中如果有空格请使用“”括起来;</p>
+<li><p>新建文章，总共有<code>post</code>、<code>draft</code>、<code>page</code>三种 layout，文章以你指定的 title 名创建，title 中如果有空格请使用“”括起来;</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>生成静态文件，下面的代码为简写，可以添加 <code>-w</code> 参数监视文件的变动;</p>
+<li><p>生成静态文件，下面的代码为简写，可以添加 <code>-w</code> 参数监视文件的变动;</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>启动本地服务器，可以添加参数 <code>-p</code> 指定服务器的端口，默认在端口4000</p>
+<li><p>启动本地服务器，可以添加参数 <code>-p</code> 指定服务器的端口，默认在端口4000</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>博客项目部署</p>
+<li><p>博客项目部署</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>一键静态文件生成与部署</p>
+<li><p>一键静态文件生成与部署</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>清楚缓存和生成的静态文件，对应于 db.json 和 public 目录下的文件</p>
+<li><p>清楚缓存和生成的静态文件，对应于 db.json 和 public 目录下的文件</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo cl</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>列出博客文件树</p>
+<li><p>列出博客文件树</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo list route</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
@@ -399,7 +364,7 @@ const gitalk = new Gitalk({
   owner: 'VanXNF',
   // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
   // 50个字符串则会报错.
-  id: window.location.pathname.split('/').pop().substring(0, 49),
+  id: location.href,
   // id: location.pathname,
   admin: ['VanXNF'],
   // facebook-like distraction free mode

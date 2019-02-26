@@ -15,18 +15,18 @@
     <meta name="keywords" content="Hexo,MathJax,">
   
 
-  <meta name="description" content="Hexo 是默认支持 mathjax 公式渲染的，但依然需要解决渲染冲突。  更改渲染引擎   卸载默认渲染引擎并安装另一个： 12npm uninstall hexo-renderer-marked --savenpm install hexo-renderer-kramed --save   这里的安装可能出问题，可以先更新一下 npm 再安装（需要权限）： 1npm install -g">
+  <meta name="description" content="&amp;nbsp;&amp;nbsp;Hexo 是默认支持 mathjax 公式渲染的，但依然需要解决渲染冲突。 更改渲染引擎&amp;nbsp;&amp;nbsp;卸载默认渲染引擎并安装另一个：12npm uninstall hexo-renderer-marked --savenpm install hexo-renderer-kramed --save &amp;nbsp;&amp;nbsp;这里的安装可能出问题，可以先更新一下 npm">
 <meta name="keywords" content="Hexo,MathJax">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 使用 MathJax 渲染公式并解决渲染冲突问题">
 <meta property="og:url" content="https://vanxnf.top/2018/09/11/Hexo-使用-MathJax-渲染公式并解决渲染冲突问题/index.html">
 <meta property="og:site_name" content="Welcome To Vientiane">
-<meta property="og:description" content="Hexo 是默认支持 mathjax 公式渲染的，但依然需要解决渲染冲突。  更改渲染引擎   卸载默认渲染引擎并安装另一个： 12npm uninstall hexo-renderer-marked --savenpm install hexo-renderer-kramed --save   这里的安装可能出问题，可以先更新一下 npm 再安装（需要权限）： 1npm install -g">
+<meta property="og:description" content="&amp;nbsp;&amp;nbsp;Hexo 是默认支持 mathjax 公式渲染的，但依然需要解决渲染冲突。 更改渲染引擎&amp;nbsp;&amp;nbsp;卸载默认渲染引擎并安装另一个：12npm uninstall hexo-renderer-marked --savenpm install hexo-renderer-kramed --save &amp;nbsp;&amp;nbsp;这里的安装可能出问题，可以先更新一下 npm">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-09-11T09:53:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 使用 MathJax 渲染公式并解决渲染冲突问题">
-<meta name="twitter:description" content="Hexo 是默认支持 mathjax 公式渲染的，但依然需要解决渲染冲突。  更改渲染引擎   卸载默认渲染引擎并安装另一个： 12npm uninstall hexo-renderer-marked --savenpm install hexo-renderer-kramed --save   这里的安装可能出问题，可以先更新一下 npm 再安装（需要权限）： 1npm install -g">
+<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;Hexo 是默认支持 mathjax 公式渲染的，但依然需要解决渲染冲突。 更改渲染引擎&amp;nbsp;&amp;nbsp;卸载默认渲染引擎并安装另一个：12npm uninstall hexo-renderer-marked --savenpm install hexo-renderer-kramed --save &amp;nbsp;&amp;nbsp;这里的安装可能出问题，可以先更新一下 npm">
 
   
 
@@ -151,7 +151,7 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#更改渲染引擎"><span class="toc-text"> 更改渲染引擎</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解决渲染冲突"><span class="toc-text"> 解决渲染冲突</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用-latex-编辑公式"><span class="toc-text"> 使用 LATEX 编辑公式</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#更改渲染引擎"><span class="toc-text">更改渲染引擎</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解决渲染冲突"><span class="toc-text">解决渲染冲突</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用-LATEX-编辑公式"><span class="toc-text">使用 LATEX 编辑公式</span></a></li></ol>
   </div>
 
 
@@ -197,26 +197,17 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <p>  Hexo 是默认支持 mathjax 公式渲染的，但依然需要解决渲染冲突。</p>
-<h1 id="更改渲染引擎"><a class="markdownIt-Anchor" href="#更改渲染引擎"></a> 更改渲染引擎</h1>
-<p>  卸载默认渲染引擎并安装另一个：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure>
-<p>  这里的安装可能出问题，可以先更新一下 npm 再安装（需要权限）：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g npm</span><br></pre></td></tr></table></figure>
-<h1 id="解决渲染冲突"><a class="markdownIt-Anchor" href="#解决渲染冲突"></a> 解决渲染冲突</h1>
-<p>  然后更改  <code>/node_modules/hexo-renderer-kramed/lib/renderer.js</code> 中的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// Change inline math rule</span><br><span class="line">function formatText(text) &#123;</span><br><span class="line">    // Fit kramed&apos;s rule: $$ + \1 + $$</span><br><span class="line">    return text.replace(/`\$(.*?)\$`/g, &apos;$$$$$1$$$$&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>  为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// Change inline math rule</span><br><span class="line">function formatText(text) &#123;</span><br><span class="line">    return text;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>  然后找到博客目录下的 <code>/node_modules/kramed/lib/rules/inline.js</code><br>
-进行下列修改：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,      第11行，将其修改为</span><br><span class="line">escape: /^\\([`*\[\]()#$+\-.!_&gt;])/,</span><br><span class="line">//em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,    第20行，将其修改为</span><br><span class="line">em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br></pre></td></tr></table></figure>
-<p>  上面的改动取消了公式中 <code>_</code> 的渲染，原本会被渲染为 <code>&lt;em&gt;</code> 标签以表示斜体，在公式中表示下标。另外还取消了 <code>\, {, }</code> 的转义。</p>
-<p>  此时出现在公式中下标和换行的问题就完美解决了。</p>
-<h1 id="使用-latex-编辑公式"><a class="markdownIt-Anchor" href="#使用-latex-编辑公式"></a> 使用 LATEX 编辑公式</h1>
-<p>  MathJax 是一个开源 JavaScript 库。它支持 LaTeX、MathML、AsciiMath 符号，可以运行于所有流行浏览器上。</p>
-<p>  这里已经配置好了，我们只需要了解 LATEX 语法来书写公式就可以了。</p>
-<p>  至于 LATEX 语法可参考:</p>
+      <p>&nbsp;&nbsp;Hexo 是默认支持 mathjax 公式渲染的，但依然需要解决渲染冲突。</p>
+<h1 id="更改渲染引擎"><a href="#更改渲染引擎" class="headerlink" title="更改渲染引擎"></a>更改渲染引擎</h1><p>&nbsp;&nbsp;卸载默认渲染引擎并安装另一个：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;这里的安装可能出问题，可以先更新一下 npm 再安装（需要权限）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g npm</span><br></pre></td></tr></table></figure></p>
+<h1 id="解决渲染冲突"><a href="#解决渲染冲突" class="headerlink" title="解决渲染冲突"></a>解决渲染冲突</h1><p>&nbsp;&nbsp;然后更改  <code>/node_modules/hexo-renderer-kramed/lib/renderer.js</code> 中的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// Change inline math rule</span><br><span class="line">function formatText(text) &#123;</span><br><span class="line">    // Fit kramed&apos;s rule: $$ + \1 + $$</span><br><span class="line">    return text.replace(/`\$(.*?)\$`/g, &apos;$$$$$1$$$$&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// Change inline math rule</span><br><span class="line">function formatText(text) &#123;</span><br><span class="line">    return text;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;然后找到博客目录下的 <code>/node_modules/kramed/lib/rules/inline.js</code><br>进行下列修改：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,      第11行，将其修改为</span><br><span class="line">escape: /^\\([`*\[\]()#$+\-.!_&gt;])/,</span><br><span class="line">//em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,    第20行，将其修改为</span><br><span class="line">em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;上面的改动取消了公式中 <code>_</code> 的渲染，原本会被渲染为 <code>&lt;em&gt;</code> 标签以表示斜体，在公式中表示下标。另外还取消了 <code>\, {, }</code> 的转义。</p>
+<p>&nbsp;&nbsp;此时出现在公式中下标和换行的问题就完美解决了。</p>
+<h1 id="使用-LATEX-编辑公式"><a href="#使用-LATEX-编辑公式" class="headerlink" title="使用 LATEX 编辑公式"></a>使用 LATEX 编辑公式</h1><p>&nbsp;&nbsp;MathJax 是一个开源 JavaScript 库。它支持 LaTeX、MathML、AsciiMath 符号，可以运行于所有流行浏览器上。</p>
+<p>&nbsp;&nbsp;这里已经配置好了，我们只需要了解 LATEX 语法来书写公式就可以了。</p>
+<p>&nbsp;&nbsp;至于 LATEX 语法可参考:</p>
 <ul>
 <li><a href="https://blog.csdn.net/u010185803/article/details/50865150" target="_blank" rel="noopener">markdown使用LaTex输入数学公式类</a></li>
 <li><a href="https://www.zybuluo.com/codeep/note/163962#6%EF%BF%AF%EF%BE%BF%EF%BE%A5%EF%BF%AF%EF%BE%BE%EF%BE%A6%EF%BF%AF%EF%BE%BE%EF%BE%82%EF%BF%AF%EF%BE%BF%EF%BE%A4%EF%BF%AF%EF%BE%BE%EF%BE%BD%EF%BF%AF%EF%BE%BE%EF%BE%95%EF%BF%AF%EF%BE%BF%EF%BE%A8%EF%BF%AF%EF%BE%BE%EF%BE%BE%EF%BF%AF%EF%BE%BE%EF%BE%93%EF%BF%AF%EF%BE%BF%EF%BE%A5%EF%BF%AF%EF%BE%BE%EF%BE%85%EF%BF%AF%EF%BE%BE%EF%BE%A5%EF%BF%AF%EF%BE%BF%EF%BE%A7%EF%BF%AF%EF%BE%BE%EF%BE%9C%EF%BF%AF%EF%BE%BE%EF%BE%81%EF%BF%AF%EF%BE%BF%EF%BE%A7%EF%BF%AF%EF%BE%BE%EF%BE%95%EF%BF%AF%EF%BE%BE%EF%BE%A5%EF%BF%AF%EF%BE%BF%EF%BE%A5%EF%BF%AF%EF%BE%BE%EF%BE%8F%EF%BF%AF%EF%BE%BE%EF%BE%B7" target="_blank" rel="noopener">Cmd Markdown 公式指导手册</a></li>
@@ -330,7 +321,7 @@ const gitalk = new Gitalk({
   owner: 'VanXNF',
   // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
   // 50个字符串则会报错.
-  id: window.location.pathname.split('/').pop().substring(0, 49),
+  id: location.href,
   // id: location.pathname,
   admin: ['VanXNF'],
   // facebook-like distraction free mode

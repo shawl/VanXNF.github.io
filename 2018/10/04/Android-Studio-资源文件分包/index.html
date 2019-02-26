@@ -15,18 +15,18 @@
     <meta name="keywords" content="Android,">
   
 
-  <meta name="description" content="写在前面   随着 Android 开发的不断推进，Android 项目内的资源文件会越来越多，在寻找时带来一些麻烦，因此对资源的分包势在必行。  资源分包   方法很简单，先创建好文件夹，然后配置 app 文件夹下的 build.gradle 文件，比如我的： 12345678android &amp;#123;    ...    sourceSets &amp;#123;        main &amp;#12">
+  <meta name="description" content="写在前面&amp;nbsp;&amp;nbsp;随着 Android 开发的不断推进，Android 项目内的资源文件会越来越多，在寻找时带来一些麻烦，因此对资源的分包势在必行。 资源分包&amp;nbsp;&amp;nbsp;方法很简单，先创建好文件夹，然后配置 app 文件夹下的 build.gradle 文件，比如我的：12345678android &amp;#123;    ...    sourceSets &amp;#123;">
 <meta name="keywords" content="Android">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android Studio 资源文件分包">
 <meta property="og:url" content="https://vanxnf.top/2018/10/04/Android-Studio-资源文件分包/index.html">
 <meta property="og:site_name" content="Welcome To Vientiane">
-<meta property="og:description" content="写在前面   随着 Android 开发的不断推进，Android 项目内的资源文件会越来越多，在寻找时带来一些麻烦，因此对资源的分包势在必行。  资源分包   方法很简单，先创建好文件夹，然后配置 app 文件夹下的 build.gradle 文件，比如我的： 12345678android &amp;#123;    ...    sourceSets &amp;#123;        main &amp;#12">
+<meta property="og:description" content="写在前面&amp;nbsp;&amp;nbsp;随着 Android 开发的不断推进，Android 项目内的资源文件会越来越多，在寻找时带来一些麻烦，因此对资源的分包势在必行。 资源分包&amp;nbsp;&amp;nbsp;方法很简单，先创建好文件夹，然后配置 app 文件夹下的 build.gradle 文件，比如我的：12345678android &amp;#123;    ...    sourceSets &amp;#123;">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-10-04T13:29:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android Studio 资源文件分包">
-<meta name="twitter:description" content="写在前面   随着 Android 开发的不断推进，Android 项目内的资源文件会越来越多，在寻找时带来一些麻烦，因此对资源的分包势在必行。  资源分包   方法很简单，先创建好文件夹，然后配置 app 文件夹下的 build.gradle 文件，比如我的： 12345678android &amp;#123;    ...    sourceSets &amp;#123;        main &amp;#12">
+<meta name="twitter:description" content="写在前面&amp;nbsp;&amp;nbsp;随着 Android 开发的不断推进，Android 项目内的资源文件会越来越多，在寻找时带来一些麻烦，因此对资源的分包势在必行。 资源分包&amp;nbsp;&amp;nbsp;方法很简单，先创建好文件夹，然后配置 app 文件夹下的 build.gradle 文件，比如我的：12345678android &amp;#123;    ...    sourceSets &amp;#123;">
 
   
 
@@ -151,7 +151,7 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#写在前面"><span class="toc-text"> 写在前面</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#资源分包"><span class="toc-text"> 资源分包</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#写在前面"><span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#资源分包"><span class="toc-text">资源分包</span></a></li></ol>
   </div>
 
 
@@ -197,12 +197,9 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <h1 id="写在前面"><a class="markdownIt-Anchor" href="#写在前面"></a> 写在前面</h1>
-<p>  随着 Android 开发的不断推进，Android 项目内的资源文件会越来越多，在寻找时带来一些麻烦，因此对资源的分包势在必行。</p>
-<h1 id="资源分包"><a class="markdownIt-Anchor" href="#资源分包"></a> 资源分包</h1>
-<p>  方法很简单，先创建好文件夹，然后配置 app 文件夹下的 <code>build.gradle</code> 文件，比如我的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">android &#123;</span><br><span class="line">    ...</span><br><span class="line">    sourceSets &#123;</span><br><span class="line">        main &#123;</span><br><span class="line">            res.srcDirs(&apos;src/main/res&apos;, &apos;src/main/res_account&apos;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>  此时 sync project 即可。要新增资源文件夹时也在此处操作。</p>
+      <h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>&nbsp;&nbsp;随着 Android 开发的不断推进，Android 项目内的资源文件会越来越多，在寻找时带来一些麻烦，因此对资源的分包势在必行。</p>
+<h1 id="资源分包"><a href="#资源分包" class="headerlink" title="资源分包"></a>资源分包</h1><p>&nbsp;&nbsp;方法很简单，先创建好文件夹，然后配置 app 文件夹下的 <code>build.gradle</code> 文件，比如我的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">android &#123;</span><br><span class="line">    ...</span><br><span class="line">    sourceSets &#123;</span><br><span class="line">        main &#123;</span><br><span class="line">            res.srcDirs(&apos;src/main/res&apos;, &apos;src/main/res_account&apos;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>&nbsp;&nbsp;此时 sync project 即可。要新增资源文件夹时也在此处操作。</p>
 
     
   </div>
@@ -312,7 +309,7 @@ const gitalk = new Gitalk({
   owner: 'VanXNF',
   // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
   // 50个字符串则会报错.
-  id: window.location.pathname.split('/').pop().substring(0, 49),
+  id: location.href,
   // id: location.pathname,
   admin: ['VanXNF'],
   // facebook-like distraction free mode
